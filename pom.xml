@@ -40,6 +40,7 @@
 
     <modules>
         <module>hazelcast/3.5.0.wso2v1</module>
+        <module>commons-collections/3.2.0.wso2v1</module>
     </modules>
 
     <build>
