@@ -32,7 +32,7 @@
     <artifactId>tomcat-catalina-ha</artifactId>
     <version>${version.tomcat}.wso2v1</version>
     <packaging>bundle</packaging>
-    <name>Tomcat high availability orbit bundle</name>
+    <name>Tomcat high availability orbit bundle - 7.0.52.wso2v1</name>
     <description>Apache Tomcat HA</description>
 
     <dependencies>
