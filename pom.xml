@@ -47,6 +47,11 @@
         <module>tomcat-el-api/7.0.59.wso2v1</module>
         <module>tomcat-jsp-api/7.0.59.wso2v1</module>
         <module>tomcat-servlet-api/7.0.59.wso2v1</module>
+        <module>tomcat/7.0.52.wso2v5</module>
+        <module>tomcat-catalina-ha/7.0.52.wso2v1</module>
+        <module>tomcat-el-api/7.0.52.wso2v1</module>
+        <module>tomcat-jsp-api/7.0.52.wso2v1</module>
+        <module>tomcat-servlet-api/7.0.52.wso2v1</module>
     </modules>
 
     <build>
