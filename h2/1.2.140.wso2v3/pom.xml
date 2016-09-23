@@ -46,13 +46,13 @@
         <dependency>
             <groupId>org.eclipse.osgi</groupId>
             <artifactId>org.eclipse.osgi</artifactId>
-            <version>3.7.0.v20110613</version>
+            <version>3.9.1.v20130814-1242</version>
             <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
-            <version>1.1.1</version>
+             <version>1.2</version>
             <optional>true</optional>
         </dependency>
     </dependencies>
