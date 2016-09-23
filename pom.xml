@@ -39,6 +39,7 @@
     </distributionManagement>
 
     <modules>
+        <module>h2/1.2.140.wso2v3</module>
         <module>hazelcast/3.5.0.wso2v1</module>
         <module>hazelcast/3.5.2.wso2v1</module>
         <module>commons-collections/3.2.0.wso2v1</module>
