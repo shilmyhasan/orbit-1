@@ -35,7 +35,7 @@
         <dependency>
             <groupId>com.rabbitmq</groupId>
             <artifactId>amqp-client</artifactId>
-            <version>3.4.4</version>
+            <version>3.6.6</version>
 	    <optional>true</optional>
         </dependency>
     </dependencies>
@@ -66,13 +66,13 @@
                         <Bundle-SymbolicName>${pom.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${pom.artifactId}</Bundle-Name>
                         <Export-Package>
-			    com.rabbitmq.*; version="3.4.4",
+			    com.rabbitmq.*; version="3.6.6",
                         </Export-Package>
                         <Import-Package>
                             *;resolution:=optional
                         </Import-Package>
                         <Include-Resource>
-                            LICENSE-MPL=LICENSE-MPL
+                            LICENSE-MPL=LICENSE-MPL,@amqp-client-3.6.6.jar!/version.properties
                         </Include-Resource>
                     </instructions>
                 </configuration>
