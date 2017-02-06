@@ -24,7 +24,7 @@
     <artifactId>tomcat-catalina-ha</artifactId>
     <version>7.0.59.wso2v1</version>
     <packaging>bundle</packaging>
-    <name>Tomcat high availability orbit bundle</name>
+    <name>Tomcat high availability orbit bundle - 7.0.59.wso2v1</name>
     <description>Apache Tomcat HA</description>
 
     <dependencies>

@@ -24,7 +24,7 @@
     <artifactId>tomcat-jsp-api</artifactId>
     <version>7.0.59.wso2v1</version>
     <packaging>bundle</packaging>
-    <name>tomcat jsp api orbit bundle</name>
+    <name>tomcat jsp api orbit bundle - 7.0.59.wso2v1</name>
     <description>Apache Tomcat JSP API</description>
 
     <dependencies>
