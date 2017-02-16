@@ -43,8 +43,10 @@
         <module>hazelcast/3.5.0.wso2v1</module>
         <module>hazelcast/3.5.2.wso2v1</module>
         <module>commons-collections/3.2.0.wso2v1</module>
+        <module>tomcat/7.0.34.wso2v1</module>
         <module>tomcat/7.0.59.wso2v3</module>
         <module>tomcat-catalina-ha/7.0.59.wso2v1</module>
+        <module>tomcat-catalina-ha/7.0.34.wso2v1</module>
         <module>tomcat-el-api/7.0.59.wso2v1</module>
         <module>tomcat-jsp-api/7.0.59.wso2v1</module>
         <module>tomcat-servlet-api/7.0.59.wso2v1</module>
