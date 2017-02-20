@@ -32,7 +32,6 @@
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-catalina-ha</artifactId>
             <version>${version.tomcat}</version>
-            <optional>true</optional>
         </dependency>
     </dependencies>
 
