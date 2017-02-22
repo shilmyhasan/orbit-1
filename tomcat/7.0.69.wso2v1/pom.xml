@@ -128,7 +128,7 @@
     </build>
 
     <properties>
-        <version.tomcat>7.0.73</version.tomcat>
+        <version.tomcat>7.0.75</version.tomcat>
         <version.ecj>4.3.1</version.ecj>
     </properties>
 </project>
