@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
  ~ Copyright (c) 2017, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
  ~
@@ -16,17 +16,15 @@
  ~ specific language governing permissions and limitations
  ~ under the License.
  -->
-
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.wso2.tomcat</groupId>
     <artifactId>tomcat-jsp-api</artifactId>
-    <version>7.0.73.wso2v1</version>
+    <version>7.0.75.wso2v1</version>
     <packaging>bundle</packaging>
-    <name>tomcat jsp api orbit bundle - 7.0.73.wso2v1</name>
+    <name>tomcat jsp api orbit bundle</name>
     <description>Apache Tomcat JSP API</description>
 
     <dependencies>
@@ -37,14 +35,6 @@
             <optional>true</optional>
         </dependency>
     </dependencies>
-
-    <distributionManagement>
-        <repository>
-            <id>wso2.releases</id>
-            <name>WSO2 internal Repository</name>
-            <url>http://maven.wso2.org/nexus/content/repositories/releases/</url>
-        </repository>
-    </distributionManagement>
 
     <build>
         <plugins>
@@ -58,12 +48,12 @@
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
                         <Export-Package>
-                            javax.servlet.jsp.*;version="${version.javax.servlet.jsp}"
+                            javax.servlet.jsp.*;version="2.2.0"
                         </Export-Package>
                         <Import-Package>
-                            javax.el;version="${javax.el.version.range}",
-                            javax.servlet;version="${javax.servlet.version.range}",
-                            javax.servlet.http;version="${javax.servlet.http.version.range}",
+                            javax.el;version="[2.2.0, 2.3.0)",
+                            javax.servlet;version="[2.6.0, 2.7.0)",
+                            javax.servlet.http;version="[2.6.0, 2.7.0)",
                             *;resolution:=optional
                         </Import-Package>
                         <DynamicImport-Package>*</DynamicImport-Package>
@@ -74,10 +64,7 @@
     </build>
 
     <properties>
-        <javax.el.version.range>[2.2.0, 2.3.0)</javax.el.version.range>
-        <javax.servlet.version.range>[2.6.0, 2.7.0)</javax.servlet.version.range>
-        <javax.servlet.http.version.range>[2.6.0, 2.7.0)</javax.servlet.http.version.range>
-        <version.javax.servlet.jsp>2.2.0</version.javax.servlet.jsp>
         <version.tomcat>7.0.77</version.tomcat>
     </properties>
+
 </project>
