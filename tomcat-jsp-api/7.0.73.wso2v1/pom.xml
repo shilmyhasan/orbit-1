@@ -78,6 +78,6 @@
         <javax.servlet.version.range>[2.6.0, 2.7.0)</javax.servlet.version.range>
         <javax.servlet.http.version.range>[2.6.0, 2.7.0)</javax.servlet.http.version.range>
         <version.javax.servlet.jsp>2.2.0</version.javax.servlet.jsp>
-        <version.tomcat>7.0.75</version.tomcat>
+        <version.tomcat>7.0.77</version.tomcat>
     </properties>
 </project>
