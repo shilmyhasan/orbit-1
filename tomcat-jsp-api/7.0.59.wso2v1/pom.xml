@@ -77,7 +77,7 @@
     </build>
 
     <properties>
-        <version.tomcat>7.0.77</version.tomcat>
+        <version.tomcat>7.0.81</version.tomcat>
     </properties>
 </project>
 
