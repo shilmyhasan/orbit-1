@@ -19,12 +19,12 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.wso2.orbit.org.apache.tiles</groupId>
+    <groupId>org.apache.tiles.wso2</groupId>
     <artifactId>tiles-jsp</artifactId>
     <packaging>bundle</packaging>
     <name>tiles.wso2</name>
     <description>This bundle will represent org.wso2.carbon.tiles</description>
-    <version>3.0.7.wso2v1</version>
+    <version>${orbit.apache.tiles.version}</version>
     <url>http://wso2.org</url>
 
     <distributionManagement>
@@ -144,9 +144,13 @@
     </build>
 
     <properties>
+        <!-- Patched orbit version -->
+        <orbit.apache.tiles.version>2.0.5.wso2v1</orbit.apache.tiles.version>
+        <!-- Patched versions -->
         <apache.tiles.version>3.0.7</apache.tiles.version>
         <commons.digester.version>2.0</commons.digester.version>
         <javax.servlet.api.version>2.5</javax.servlet.api.version>
+
         <maven.bundle.plugin.version>3.3.0</maven.bundle.plugin.version>
     </properties>
 </project>

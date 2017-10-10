@@ -19,13 +19,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.wso2.orbit.org.apache.zookeeper</groupId>
-    <artifactId>apache-zookeeper</artifactId>
+    <groupId>org.apache.geronimo.specs.wso2</groupId>
+    <artifactId>geronimo-jms_1.1_spec</artifactId>
     <packaging>bundle</packaging>
-    <name>zookeeper orbit bundle</name>
-    <version>3.4.9.wso2v1</version>
+    <name>geronimo.jms.1.1.spec.wso2</name>
+    <version>${orbit.geronimo.specs.version}</version>
     <description>
-        This bundle will represent org.apache.zookeeper
+        org.wso2.carbon.ant. This bundle will represent Ant
     </description>
     <url>http://wso2.org</url>
 
@@ -39,15 +39,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.apache.zookeeper</groupId>
-            <artifactId>zookeeper</artifactId>
-            <version>${zookeeper.version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>log4j</groupId>
-                    <artifactId>log4j</artifactId>
-                </exclusion>
-            </exclusions>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jms_1.1_spec</artifactId>
+            <version>${org.apache.geronimo.specs.version}</version>
             <optional>true</optional>
         </dependency>
     </dependencies>
@@ -64,12 +58,15 @@
                         <Bundle-Vendor>WSO2, Inc.</Bundle-Vendor>
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
-                        <Private-Package>org.apache.jute.*</Private-Package>
-                        <Import-Package/>
                         <Export-Package>
-                            org.apache.zookeeper.*;-split-package:=merge-first
+                            javax.jms.*
                         </Export-Package>
-                        <DynamicImport-Package>*</DynamicImport-Package>
+                        <Import-Package>
+                            !javax.transaction.*
+                        </Import-Package>
+                        <Fragment-Host>
+                            system.bundle; extension:=framework
+                        </Fragment-Host>
                     </instructions>
                 </configuration>
             </plugin>
@@ -77,7 +74,10 @@
     </build>
 
     <properties>
-        <zookeeper.version>3.4.9</zookeeper.version>
-        <maven.bundle.plugin.version>3.3.0</maven.bundle.plugin.version>
+        <maven.bundle.plugin.version>1.4.0</maven.bundle.plugin.version>
+        <!-- Patched orbit version -->
+        <orbit.geronimo.specs.version>1.1.0.wso2v1</orbit.geronimo.specs.version>
+        <!-- Patched geronimo specs version -->
+        <org.apache.geronimo.specs.version>1.1.1</org.apache.geronimo.specs.version>
     </properties>
 </project>
