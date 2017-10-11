@@ -56,6 +56,7 @@
                         <Bundle-Vendor>WSO2, Inc.</Bundle-Vendor>
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
+                        <Bundle-Version>${zookeeper.version}.wso2v1</Bundle-Version>
                         <Private-Package>org.apache.jute.*</Private-Package>
                         <Import-Package/>
                         <Export-Package>
