@@ -72,6 +72,7 @@
                     <instructions>
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
+                        <Bundle-Version>${jdbc.pool.patch.version}.wso2v2</Bundle-Version>
                         <Export-Package>
                             org.apache.tomcat.jdbc.pool.*;version="1.7.0",
                         </Export-Package>

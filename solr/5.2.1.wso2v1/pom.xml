@@ -123,6 +123,7 @@
                 <configuration>
                     <instructions>
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+                        <Bundle-Version>${version.solr}.wso2v1</Bundle-Version>
                         <Export-Package>
                             org.apache.solr.*;version="${version.solr}"
                         </Export-Package>
