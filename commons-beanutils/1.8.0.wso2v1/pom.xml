@@ -64,7 +64,6 @@
                         <Bundle-Vendor>WSO2, Inc.</Bundle-Vendor>
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
-                        <Bundle-Version>${commons.beanutils.version}.wso2v1</Bundle-Version>
                         <Embed-Dependency>
                             commons-beanutils;scope=compile|runtime;inline=false;
                         </Embed-Dependency>

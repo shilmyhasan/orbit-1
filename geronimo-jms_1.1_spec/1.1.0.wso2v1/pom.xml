@@ -58,7 +58,6 @@
                         <Bundle-Vendor>WSO2, Inc.</Bundle-Vendor>
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
-                        <Bundle-Version>${org.apache.geronimo.specs.version}.wso2v1</Bundle-Version>
                         <Export-Package>
                             javax.jms.*
                         </Export-Package>

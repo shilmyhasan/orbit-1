@@ -58,7 +58,6 @@
                         <Bundle-Vendor>WSO2, Inc.</Bundle-Vendor>
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
-                        <Bundle-Version>${geronimo.saaj.version}.wso2v3</Bundle-Version>
                         <Export-Package>
                             javax.xml.soap;
                         </Export-Package>

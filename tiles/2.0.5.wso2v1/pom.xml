@@ -67,7 +67,6 @@
                     <instructions>
                         <Bundle-SymbolicName>${pom.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${pom.artifactId}</Bundle-Name>
-                        <Bundle-Version>${apache.tiles.version}.wso2v1</Bundle-Version>
                         <Export-Package>
                             org.wso2.carbon.tiles; version=1.0.0,
                             org.apache.tiles;
