@@ -58,10 +58,10 @@
                         <Bundle-Vendor>WSO2, Inc.</Bundle-Vendor>
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
+                        <Bundle-Version>${orbit.geronimo.saaj.version}</Bundle-Version>
                         <Export-Package>
-                            javax.xml.soap;
+                            javax.xml.soap; version=1.0.0
                         </Export-Package>
-                        <Fragment-Host>system.bundle; extension:=framework</Fragment-Host>
                         <_removeheaders>Import-Package</_removeheaders>
                         <_failok>true</_failok>
                     </instructions>
@@ -75,6 +75,6 @@
         <orbit.geronimo.saaj.version>1.0.0.wso2v3</orbit.geronimo.saaj.version>
         <!-- Patched geronimo saaj version -->
         <geronimo.saaj.version>1.0.1</geronimo.saaj.version>
-        <maven.bundle.plugin.version>3.3.0</maven.bundle.plugin.version>
+        <maven.bundle.plugin.version>1.4.0</maven.bundle.plugin.version>
     </properties>
 </project>
