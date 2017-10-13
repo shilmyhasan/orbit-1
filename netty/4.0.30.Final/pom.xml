@@ -23,7 +23,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.wso2.orbit.io.netty</groupId>
-    <artifactId>io.netty.codec</artifactId>
+    <artifactId>netty-codec</artifactId>
     <version>${netty.codec.orbit.version}</version>
     <packaging>bundle</packaging>
     <name>WSO2 Carbon Orbit - Netty Codec</name>
@@ -45,15 +45,17 @@
             <groupId>io.netty</groupId>
             <artifactId>netty-codec</artifactId>
             <version>${netty.codec.version}</version>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 
     <build>
+        <finalName>io.netty.codec-${netty.codec.orbit.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
-                <version>2.4.0</version>
+                <version>1.4.0</version>
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
@@ -61,21 +63,23 @@
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
                         <Import-Package>
-                            io.netty.handler.codec.*;version="${netty.codec.version}"
+                            com.google.protobuf;version="[2.5,3)";resolution:=optional,
+                            com.jcraft.jzlib;resolution:=optional,
+                            io.netty.buffer;version="[4.0,5)",
+                            io.netty.channel;version="[4.0,5)",
+                            io.netty.channel.socket;version="[4.0,5)",
+                            io.netty.util;version="[4.0,5)",
+                            io.netty.util.concurrent;version="[4.0,5)",
+                            io.netty.util.internal;version="[4.0,5)",
+                            io.netty.util.internal.logging;version="[4.0,5)",
+                            org.jboss.marshalling;resolution:=optional,
+                            sun.nio.ch;resolution:=optional,
+                            org.eclipse.jetty.npn;version="[1,2)";resolution:=optional,
+                            org.eclipse.jetty.alpn;version="[1,2)";resolution:=optional
                         </Import-Package>
                         <Export-Package>
-                            io.netty.handler.codec;uses:="io.netty.buffer,io.netty.channel,io.netty.util";version="${netty.codec.orbit.version}",
-                            io.netty.handler.codec.base64;uses:="io.netty.buffer,io.netty.channel,io.netty.handler.codec";version="${netty.codec.orbit.version}",
-                            io.netty.handler.codec.bytes;uses:="io.netty.buffer,io.netty.channel,io.netty.handler.codec";version="${netty.codec.orbit.version}",
-                            io.netty.handler.codec.compression;uses:="io.netty.buffer,io.netty.channel,io.netty.handler.codec";version="${netty.codec.orbit.version}",
-                            io.netty.handler.codec.marshalling;uses:="io.netty.buffer,io.netty.channel,io.netty.handler.codec,org.jboss.marshalling";version="${netty.codec.orbit.version}",
-                            io.netty.handler.codec.protobuf;uses:="com.google.protobuf,io.netty.buffer,io.netty.channel,io.netty.handler.codec";version="${netty.codec.orbit.version}",
-                            io.netty.handler.codec.serialization;uses:="io.netty.buffer,io.netty.channel,io.netty.handler.codec";version="${netty.codec.orbit.version}",
-                            io.netty.handler.codec.string;uses:="io.netty.buffer,io.netty.channel,io.netty.handler.codec";version="${netty.codec.orbit.version}"
+                            io.netty.handler.codec.*;version="${netty.codec.orbit.version}"
                         </Export-Package>
-                        <Private-Package>
-                            io.netty.handler.codec.*
-                        </Private-Package>
                     </instructions>
                 </configuration>
             </plugin>
