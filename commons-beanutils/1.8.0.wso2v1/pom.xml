@@ -68,8 +68,8 @@
                             commons-beanutils;scope=compile|runtime;inline=false;
                         </Embed-Dependency>
                         <Export-Package>
-                            org.apache.commons.beanutils.*; version=${commons.beanutils.version},
-                            org.apache.commons.collections.*; version=${commons.beanutils.version}
+                            org.apache.commons.beanutils.*; version=${beanutils.oldversion},
+                            org.apache.commons.collections.*; version=${beanutils.oldversion}
                         </Export-Package>
                         <DynamicImport-Package>*</DynamicImport-Package>
                     </instructions>
@@ -81,8 +81,9 @@
     <properties>
         <!-- Patched orbit bundle version -->
         <orbit.beanutils.version>1.8.0.wso2v1</orbit.beanutils.version>
+        <beanutils.oldversion>1.8.0</beanutils.oldversion>
         <!-- Patched beanutils version -->
         <commons.beanutils.version>1.9.3</commons.beanutils.version>
-        <maven.bundle.plugin.version>3.3.0</maven.bundle.plugin.version>
+        <maven.bundle.plugin.version>1.4.0</maven.bundle.plugin.version>
     </properties>
 </project>
