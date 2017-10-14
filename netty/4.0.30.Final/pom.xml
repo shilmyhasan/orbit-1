@@ -88,7 +88,7 @@
 
     <properties>
         <!-- Patched netty-codec version -->
-        <netty.codec.version>4.0.52.Final</netty.codec.version>
+        <netty.codec.version>4.0.39.Final</netty.codec.version>
         <netty.codec.orbit.version>4.0.30.Final</netty.codec.orbit.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
