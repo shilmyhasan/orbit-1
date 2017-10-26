@@ -93,6 +93,7 @@
         <module>jackson-core/2.6.1.wso2v1</module>
         <module>tranql-connector/1.1.0.wso2v1</module>
         <module>poi/3.14.0.wso2v1</module>
+        <module>nimbus/2.26.1.wso2v3</module>
     </modules>
 
     <build>
