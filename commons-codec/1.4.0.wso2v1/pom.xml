@@ -45,7 +45,7 @@
                     <instructions>
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
-                        <Export-Package>org.apache.commons.codec.*;version="${project.version}"</Export-Package>
+                        <Export-Package>org.apache.commons.codec.*</Export-Package>
                         <Import-Package>
                             !org.apache.commons.codec.*
                         </Import-Package>
