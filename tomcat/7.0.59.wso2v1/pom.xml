@@ -24,7 +24,7 @@
     <artifactId>tomcat</artifactId>
     <version>7.0.59.wso2v1</version>
     <packaging>bundle</packaging>
-    <name>tomcat orbit bundle</name>
+    <name>tomcat orbit bundle - 7.0.59.wso2v1</name>
     <description>Apache Tomcat</description>
 
     <dependencies>

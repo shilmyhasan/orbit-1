@@ -24,7 +24,7 @@
     <artifactId>tomcat-servlet-api</artifactId>
     <version>7.0.54.wso2v1</version>
     <packaging>bundle</packaging>
-    <name>tomcat servlet api orbit bundle</name>
+    <name>tomcat servlet api orbit bundle - 7.0.54.wso2v1</name>
     <description>Apache Tomcat Servlet API</description>
 
     <dependencies>

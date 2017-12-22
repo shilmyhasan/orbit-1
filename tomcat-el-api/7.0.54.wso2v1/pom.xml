@@ -24,7 +24,7 @@
     <artifactId>tomcat-el-api</artifactId>
     <version>7.0.54.wso2v1</version>
     <packaging>bundle</packaging>
-    <name>tomcat el api orbit bundle</name>
+    <name>tomcat el api orbit bundle - 7.0.54.wso2v1</name>
     <description>Apache Tomcat EL API</description>
 
     <dependencies>
