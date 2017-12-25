@@ -63,6 +63,6 @@
     </build>
 
     <properties>
-        <version.tomcat>7.0.81</version.tomcat>
+        <version.tomcat>7.0.82</version.tomcat>
     </properties>
 </project>

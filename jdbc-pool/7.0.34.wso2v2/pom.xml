@@ -89,7 +89,7 @@
     </build>
    <properties>
         <orbit.patch.version.jdbc.pool>7.0.34</orbit.patch.version.jdbc.pool>
-        <jdbc.pool.patch.version>7.0.81</jdbc.pool.patch.version>
+        <jdbc.pool.patch.version>7.0.82</jdbc.pool.patch.version>
     </properties>
 </project>
 
