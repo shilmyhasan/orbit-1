@@ -102,6 +102,7 @@
         <module>pdfbox/1.8.10.wso2v2</module>
         <module>netty/4.0.23.wso2v1</module>
         <module>commons-codec/1.4.0.wso2v1</module>
+        <module>cxf/2.7.16.wso2v1</module>
     </modules>
 
     <build>
