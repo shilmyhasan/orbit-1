@@ -103,6 +103,7 @@
         <module>netty/4.0.23.wso2v1</module>
         <module>commons-codec/1.4.0.wso2v1</module>
         <module>cxf/2.7.16.wso2v1</module>
+        <module>openid4java/1.0.0.wso2v1</module>
     </modules>
 
     <build>
