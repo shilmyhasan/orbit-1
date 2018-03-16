@@ -104,6 +104,7 @@
         <module>commons-codec/1.4.0.wso2v1</module>
         <module>cxf/2.7.16.wso2v1</module>
         <module>openid4java/1.0.0.wso2v1</module>
+        <module>csrfguard/3.1.0.wso2v2</module>
     </modules>
 
     <build>
