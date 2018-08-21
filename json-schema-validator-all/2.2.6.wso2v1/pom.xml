@@ -95,6 +95,7 @@
                             com.google.common.cache; version="${com.google.common.imp.pkg.version.range}",
                             com.google.common.primitives; version="${com.google.common.imp.pkg.version.range}",
                             com.google.i18n.phonenumbers; version="${com.google.i18n.phonenumber.imp.pkg.version.range}",
+                            org.mozilla.javascript.*
                         </Import-Package>
                         <Private-Package>
                         </Private-Package>
@@ -131,12 +132,6 @@
             <name>WSO2 internal Repository</name>
             <url>http://maven.wso2.org/nexus/content/repositories/releases/</url>
         </repository>
-
-        <snapshotRepository>
-            <id>wso2.snapshots</id>
-            <name>Apache Snapshot Repository</name>
-            <url>http://maven.wso2.org/nexus/content/repositories/snapshots/</url>
-        </snapshotRepository>
     </distributionManagement>
 
 </project>
