@@ -23,7 +23,7 @@
     <groupId>org.wso2.orbit.com.github.fge</groupId>
     <artifactId>json-schema-validator-all</artifactId>
     <packaging>bundle</packaging>
-    <name>WSO2 Carbon Orbit - FGE-Json Schema Validator</name>
+    <name>WSO2 Carbon Orbit - FGE-Json Schema Validator - 2.2.6.wso2v1</name>
     <version>2.2.6.wso2v1</version>
     <description>
         This bundle will export packages from fge json-schema-validator
