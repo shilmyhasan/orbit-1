@@ -111,6 +111,7 @@
         <module>jboss-netty/3.9.0.Final</module>
         <module>geronimo-kernel/2.0.1.wso2v1</module>
         <module>smooks/1.5.1.wso2v1</module>
+        <module>swagger-codegen/2.2.3.wso2v1</module>
     </modules>
 
     <build>
