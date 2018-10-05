@@ -113,6 +113,7 @@
         <module>smooks/1.5.1.wso2v1</module>
         <module>swagger-codegen/2.2.3.wso2v1</module>
         <module>swagger-inflector/1.0.16.wso2v1</module>
+        <module>jsch/0.1.51.wso2v1</module>
     </modules>
 
     <build>
