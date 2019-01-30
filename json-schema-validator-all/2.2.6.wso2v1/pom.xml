@@ -111,7 +111,7 @@
 
     <properties>
         <json.schema.validator.version>2.2.6</json.schema.validator.version>
-        <json.schema.core.version>1.2.5</json.schema.core.version>
+        <json.schema.core.version>1.2.8</json.schema.core.version>
         <uri.template.version>0.9</uri.template.version>
         <msg.simple.version>1.1</msg.simple.version>
         <btf.version>1.2</btf.version>
@@ -125,6 +125,14 @@
         <com.fasterxml.jackson.core.imp.pkg.version.range>[2.6.0, 3.0.0)</com.fasterxml.jackson.core.imp.pkg.version.range>
         <com.google.i18n.phonenumber.imp.pkg.version.range>[7.4.0, 7.5.0)</com.google.i18n.phonenumber.imp.pkg.version.range>
     </properties>
+
+    <repositories>
+       <repository>
+         <id>wso2.thirdparty</id>
+         <name>WSO2 Third Party Repository</name>
+         <url>https://maven.wso2.org/nexus/content/repositories/thirdparty/</url>
+       </repository>
+     </repositories>
 
     <distributionManagement>
         <repository>
