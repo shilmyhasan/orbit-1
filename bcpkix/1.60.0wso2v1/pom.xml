@@ -143,7 +143,7 @@
 
     <properties>
         <exp.pkg.version.bcpkix>1.60.0.wso2v1</exp.pkg.version.bcpkix>
-        <imp.pkg.version.range.bcprov>[1.52, 1.60)</imp.pkg.version.range.bcprov>
+        <imp.pkg.version.range.bcprov>[1.52.0, 2.0.0)</imp.pkg.version.range.bcprov>
     </properties>
 
 </project>
