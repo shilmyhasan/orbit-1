@@ -72,6 +72,6 @@
 
     <properties>
         <version.javax.el>2.2.0</version.javax.el>
-        <version.tomcat>7.0.82</version.tomcat>
+        <version.tomcat>7.0.92</version.tomcat>
     </properties>
 </project>
