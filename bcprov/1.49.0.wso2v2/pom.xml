@@ -26,7 +26,7 @@
     <name>bcprov</name>
     <version>1.49.0.wso2v2</version>
     <description>
-        This bundle will represent bouncycastle 1.32
+        This bundle will represent bouncycastle 1.60
     </description>
     <url>http://wso2.org</url>
 
@@ -61,7 +61,7 @@
         <dependency>
             <groupId>org.bouncycastle</groupId>
             <artifactId>bcprov-jdk15on</artifactId>
-            <version>1.52</version>
+            <version>1.60</version>
 	    <!-- By setting optional false, dependent projects of this orbit bundle will be able to see bcprov-jdk15on library as a transitive dependency.
 		 This is required because we are embedding bcprov-jdk15on library inside this orbit bundle without extracting the content, 
 		 becuase bcprov-jdk15on library is signed. 
@@ -82,7 +82,7 @@
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
                         <Import-Package>
-			    !org.bouncycastle.*;version=1.52.0
+			    !org.bouncycastle.*;version=1.60.0
                         </Import-Package>
                         <DynamicImport-Package>*</DynamicImport-Package>
 			<Embed-Dependency>bcprov-jdk15on;scope=compile|runtime;inline=false</Embed-Dependency>
