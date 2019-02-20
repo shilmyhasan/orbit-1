@@ -33,14 +33,10 @@
     <url>http://wso2.org</url>
 
     <dependencies>
-        <!--
-            Nimbus 5.8.1 is NOT available officially.
-            Available under the WSO2 support repository by the name `wso2-nimbus`
-        -->
         <dependency>
-            <groupId>com.nimbusds</groupId>
+            <groupId>org.wso2.com.nimbusds</groupId>
             <artifactId>nimbus-jose-jwt</artifactId>
-            <version>5.8.1</version>
+            <version>5.8.1_wso2v1</version>
             <optional>true</optional>
         </dependency>
         <dependency>
