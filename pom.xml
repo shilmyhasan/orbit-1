@@ -119,6 +119,7 @@
         <module>swagger-inflector/1.0.16.wso2v1</module>
         <module>jsch/0.1.51.wso2v1</module>
         <module>jsonpath/2.4.0.wso2v1</module>
+        <module>nimbus/5.8.0.wso2v1</module>
     </modules>
 
     <build>
