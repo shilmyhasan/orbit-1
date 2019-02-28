@@ -77,7 +77,7 @@
         </plugins>
     </build>
     <properties>
-        <version.tomcat>7.0.82</version.tomcat>
+        <version.tomcat>7.0.92</version.tomcat>
     </properties>
 </project>
 
