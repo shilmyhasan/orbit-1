@@ -58,7 +58,7 @@
     </build>
     <properties>
         <orbit.codec.version>1.4.0.wso2v1</orbit.codec.version>
-        <commons-codec.version>1.10</commons-codec.version>
+        <commons-codec.version>1.12</commons-codec.version>
         <export.package.version>1.4</export.package.version>
     </properties>
 </project>
