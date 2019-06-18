@@ -21,7 +21,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.atlassian.oai.wso2</groupId>
+    <groupId>org.wso2.orbit.com.atlassian.oai</groupId>
     <artifactId>swagger-request-validator-core</artifactId>
     <version>2.3.0.wso2v1</version>
     <packaging>bundle</packaging>
@@ -44,62 +44,73 @@
             <groupId>com.atlassian.oai</groupId>
             <artifactId>swagger-request-validator-core</artifactId>
             <version>${swagger-request-validator.version}</version>
-            <scope>provided</scope>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>io.swagger.parser.v3</groupId>
             <artifactId>swagger-parser</artifactId>
             <version>2.0.5</version>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>io.swagger.parser.v3</groupId>
             <artifactId>swagger-parser-core</artifactId>
             <version>2.0.5</version>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>io.swagger.parser.v3</groupId>
             <artifactId>swagger-parser-v3</artifactId>
             <version>2.0.5</version>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>io.swagger</groupId>
             <artifactId>swagger-parser</artifactId>
             <version>1.0.39</version>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>io.swagger</groupId>
             <artifactId>swagger-compat-spec-parser</artifactId>
             <version>1.0.39</version>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>io.swagger.core.v3</groupId>
             <artifactId>swagger-models</artifactId>
             <version>2.0.4</version>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>io.swagger.core.v3</groupId>
             <artifactId>swagger-core</artifactId>
             <version>2.0.5</version>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>io.swagger</groupId>
             <artifactId>swagger-core</artifactId>
             <version>1.5.2</version>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>io.swagger.parser.v3</groupId>
             <artifactId>swagger-parser-v2-converter</artifactId>
             <version>2.0.5</version>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>io.swagger</groupId>
             <artifactId>swagger-models</artifactId>
             <version>1.5.21</version>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>com.github.java-json-tools</groupId>
             <artifactId>json-schema-validator</artifactId>
             <version>2.2.8</version>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 
@@ -115,16 +126,38 @@
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
                         <Export-Package>
-                            com.atlassian.oai.*,
-                            swagger.validation.*,
+                            com.atlassian.oai.*;version="${swagger-request-validator.version}",
+                            swagger.validation.*;version ="${swagger-request-validator.version}",
                         </Export-Package>
                         <Import-Package>
+                            org.slf4j; version="1.7.21",
+                            com.google.common.collect.*; version="${com.google.common.imp.pkg.version}",
+                            com.google.common.net; version="${com.google.common.imp.pkg.version}",
+                            com.fasterxml.jackson.core; version="${com.fasterxml.jackson.core.imp.pkg.version.range}",
+                            com.fasterxml.jackson.core.util;version="${com.fasterxml.jackson.core.imp.pkg.version.range}",
+                            com.fasterxml.jackson.dataformat.yaml; version="${com.fasterxml.jackson.core.imp.pkg.version.range}",
+                            com.fasterxml.jackson.databind; version="${com.fasterxml.jackson.core.imp.pkg.version.range}",
+                            com.fasterxml.jackson.databind.annotation; version="${com.fasterxml.jackson.core.imp.pkg.version.range}",
+                            com.fasterxml.jackson.annotation.*; version="${com.fasterxml.jackson.core.imp.pkg.version.range}",
+                            com.fasterxml.jackson.databind.node; version="${com.fasterxml.jackson.core.imp.pkg.version.range}",
+                            com.fasterxml.jackson.databind.module; version="${com.fasterxml.jackson.core.imp.pkg.version.range}",
+                            com.fasterxml.jackson.databind.type; version="${com.fasterxml.jackson.core.imp.pkg.version.range}",
+                            com.fasterxml.jackson.databind.ser; version="${com.fasterxml.jackson.core.imp.pkg.version.range}",
+                            com.github.fge.jsonschema.core.*; version="${json.schema.core.version}",
+                            com.github.fge.msgsimple.load.*; version="${msg.simple.version}",
+                            com.github.fge.msgsimple.bundle; version="${msg.simple.version}",
+                            com.github.fge.*; version="${btf.version}",
+                            com.google.common.base.*; version="${com.google.common.imp.pkg.version}",
+                            com.github.fge.msgsimple.*;version="${msg.simple.version}",
+                            io.swagger.v3.oas.models.*; version="${io.swagger.v3.oas.models.version}",
+                            org.joda.time.format; version="${org.joda.time.imp.pkg.version.range}",
+                            org.joda.time; version="${org.joda.time.imp.pkg.version.range}",
+                            javax.mail.internet; version="${javax.mail.internet.imp.pkg.version.range}",
+                            com.google.i18n.phonenumbers; version="${com.google.i18n.phonenumber.imp.pkg.version.range}",
+                            org.apache.commons.lang3.*; version="${commons-lang3.import.version}",
                         </Import-Package>
                         <Private-Package>
                         </Private-Package>
-                        <Include-Resource>
-                            {maven-resources}
-                        </Include-Resource>
                         <Embed-Dependency>
                             swagger-parser-v2-converter;version=2.0.5;scope=compile|runtime;inline=false,
                             swagger-parser;version=1.0.39;scope=compile|runtime;inline=false,
@@ -132,26 +165,29 @@
                             swagger-parser-v3;version=2.0.5;scope=compile|runtime;inline=false,
                             swagger-parser-core;version=2.0.5;scope=compile|runtime;inline=false,
                             swagger-compat-spec-parser;version=1.0.39;scope=compile|runtime;inline=false,
-                            swagger-models;version=2.0.4;scope=compile|runtime;inline=false,
                             swagger-models;version=1.5.21;scope=compile|runtime;inline=false,
                             swagger-core;version=1.5.2;scope=compile|runtime;inline=false,
                             swagger-core;version=2.0.5;scope=compile|runtime;inline=false,
                             swagger-core;version=2.0.5;scope=compile|runtime;inline=false,
                             json-schema-validator;version=2.2.8;scope=compile|runtime;inline=false
                         </Embed-Dependency>
-                        <DynamicImport-Package>*</DynamicImport-Package>
                     </instructions>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-deploy-plugin</artifactId>
-                <version>2.4</version>
             </plugin>
         </plugins>
     </build>
 
     <properties>
         <swagger-request-validator.version>2.3.0</swagger-request-validator.version>
+        <com.fasterxml.jackson.core.imp.pkg.version.range>[2.6.0, 3.0.0)</com.fasterxml.jackson.core.imp.pkg.version.range>
+        <json.schema.core.version>1.2.5</json.schema.core.version>
+        <msg.simple.version>1.1</msg.simple.version>
+        <btf.version>1.2</btf.version>
+        <com.google.common.imp.pkg.version>20.0.0</com.google.common.imp.pkg.version>
+        <io.swagger.v3.oas.models.version>2.0.4</io.swagger.v3.oas.models.version>
+        <org.joda.time.imp.pkg.version.range>[2.6.0, 3.0.0)</org.joda.time.imp.pkg.version.range>
+        <javax.mail.internet.imp.pkg.version.range>[1.4.0,1.5.0)</javax.mail.internet.imp.pkg.version.range>
+        <com.google.i18n.phonenumber.imp.pkg.version.range>[7.4.0, 7.5.0)</com.google.i18n.phonenumber.imp.pkg.version.range>
+        <commons-lang3.import.version>[3.3.2, 3.3.3)</commons-lang3.import.version>
     </properties>
 </project>
