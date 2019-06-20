@@ -126,6 +126,7 @@
         <module>jsch/0.1.51.wso2v1</module>
         <module>jsonpath/2.4.0.wso2v1</module>
         <module>nimbus/5.8.0.wso2v1</module>
+        <module>swagger-request-validator/2.3.0.wso2v1</module>
     </modules>
 
     <build>
