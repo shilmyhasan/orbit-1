@@ -264,7 +264,8 @@
                         <Bundle-Name>${pom.artifactId}</Bundle-Name>
                         <Export-Package>
                             org.opensaml.*; version="${opensaml.orbit.version}",
-                            org.joda.time.*;version="${opensaml.orbit.version}"
+                            org.joda.time.*;version="${opensaml.orbit.version}",
+                            org.apache.velocity.*;version="${opensaml.orbit.version}"
                         </Export-Package>
                         <Private-Package>
                         </Private-Package>
@@ -288,7 +289,7 @@
                             org.apache.commons.codec.binary;version="${org.apache.commons.codec.binary.version}",
                             org.apache.commons.configuration;version="${org.apache.commons.configuration.version}";resolution:=optional,
                             org.apache.commons.fileupload.*;version="${org.apache.commons.fileupload.version}";resolution:=optional,
-                            org.apache.commons.collections.iterators;version="${org.apache.commons.collections.iterators.version}";
+                            org.apache.commons.collections.*;version="${org.apache.commons.collections.version}";
                             resolution:=optional,
                             org.apache.log4j.*;version="${apache.log4j.version}";resolution:=optional,
                             org.apache.xml.security.*;version="${org.apache.xml.security.version}";resolution:=optional,
@@ -351,7 +352,7 @@
         <org.apache.velocity.version>[2.4.1,3.0.0)</org.apache.velocity.version>
         <apache.log4j.version>[1.2.17,2)</apache.log4j.version>
         <org.apache.commons.codec.binary.version>[1.4.0,2.0.0)</org.apache.commons.codec.binary.version>
-        <org.apache.commons.collections.iterators.version>[3.2.2,4.0.0)</org.apache.commons.collections.iterators.version>
+        <org.apache.commons.collections.version>[3.2.2,4.0.0)</org.apache.commons.collections.version>
         <org.apache.commons.beanutils.version>[1.8.0,2.0.0)</org.apache.commons.beanutils.version>
         <org.apache.commons.configuration.version>[1.6.0,2.0.0)</org.apache.commons.configuration.version>
         <org.apache.commons.fileupload.version>[1.2.2,2.0.0)</org.apache.commons.fileupload.version>
