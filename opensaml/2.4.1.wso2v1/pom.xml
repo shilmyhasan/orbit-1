@@ -289,7 +289,11 @@
                             org.apache.commons.codec.binary;version="${org.apache.commons.codec.binary.version}",
                             org.apache.commons.configuration;version="${org.apache.commons.configuration.version}";resolution:=optional,
                             org.apache.commons.fileupload.*;version="${org.apache.commons.fileupload.version}";resolution:=optional,
-                            org.apache.commons.collections.*;version="${org.apache.commons.collections.version}";
+                            org.apache.commons.collections.iterators;version="${org.apache.commons.collections.version}";
+                            resolution:=optional,
+                            org.apache.commons.collections;version="${org.apache.commons.collections.version}";
+                            resolution:=optional,
+                            org.apache.commons.collections.map;version="${org.apache.commons.collections.version}";
                             resolution:=optional,
                             org.apache.log4j.*;version="${apache.log4j.version}";resolution:=optional,
                             org.apache.xml.security.*;version="${org.apache.xml.security.version}";resolution:=optional,
