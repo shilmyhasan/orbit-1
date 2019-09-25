@@ -101,6 +101,7 @@
         <module>opensaml/2.4.1.wso2v1</module>
         <module>json-schema-validator-all/2.2.6.wso2v1</module>
         <module>json-schema-validator-all/2.2.6.wso2v2</module>
+        <module>json-schema-validator-all/2.2.6.wso2v4</module>
         <module>zookeeper/3.3.4.wso2v1</module>
         <module>commons-beanutils/1.8.0.wso2v1</module>
         <module>geronimo-jms_1.1_spec/1.1.0.wso2v1</module>
