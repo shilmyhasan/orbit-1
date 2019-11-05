@@ -114,6 +114,7 @@
         <module>tranql-connector/1.1.0.wso2v1</module>
         <module>poi/3.9.0.wso2v1</module>
         <module>poi/3.14.0.wso2v1</module>
+        <module>poi-scratchpad/3.9.0.wso2v1</module>
         <module>pdfbox/1.8.10.wso2v2</module>
         <module>pdfbox/1.8.13.wso2v1</module>
         <module>netty/4.0.23.wso2v1</module>
