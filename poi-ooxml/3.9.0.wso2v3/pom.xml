@@ -98,8 +98,10 @@
                             !schemasMicrosoftComOfficeOffice.*,
                             !schemasMicrosoftComOfficePowerpoint.*,
                             !schemasMicrosoftComOfficeWord.*,
-                            !schemasMicrosoftComVml.*,
+                            !schemasMicrosoftComVml.*
                         </Import-Package>
+                        <Private-Package>
+                        </Private-Package>
                     </instructions>
                 </configuration>
             </plugin>
