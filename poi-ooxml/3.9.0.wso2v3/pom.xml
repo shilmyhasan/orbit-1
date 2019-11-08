@@ -48,13 +48,13 @@
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
-            <version>3.9</version>
+            <version>${version.poi-ooxml}</version>
             <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml-schemas</artifactId>
-            <version>3.9</version>
+            <version>${version.poi-ooxml}</version>
             <optional>true</optional>
         </dependency>
     </dependencies>
@@ -64,7 +64,7 @@
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
-                <version>1.4.0</version>
+                <version>2.4.0</version>
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
@@ -98,11 +98,16 @@
                             !schemasMicrosoftComOfficeOffice.*,
                             !schemasMicrosoftComOfficePowerpoint.*,
                             !schemasMicrosoftComOfficeWord.*,
-                            !schemasMicrosoftComVml.*,
+                            !schemasMicrosoftComVml.*
                         </Import-Package>
+                        <Private-Package>
+                        </Private-Package>
                     </instructions>
                 </configuration>
             </plugin>
         </plugins>
     </build>
+    <properties>
+        <version.poi-ooxml>3.17</version.poi-ooxml>
+    </properties>
 </project>
