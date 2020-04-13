@@ -51,6 +51,7 @@
         <module>tomcat/7.0.34.wso2v1</module>
         <module>tomcat/7.0.28.wso2v1</module>
         <module>tomcat/7.0.59.wso2v3</module>
+        <module>tomcat/9.0.22.wso2v1</module>
         <module>tomcat-catalina-ha/7.0.59.wso2v1</module>
         <module>tomcat-catalina-ha/7.0.34.wso2v1</module>
         <module>tomcat-catalina-ha/7.0.28.wso2v1</module>
