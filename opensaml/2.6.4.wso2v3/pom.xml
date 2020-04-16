@@ -317,7 +317,7 @@
         <opensaml1.version>1.1</opensaml1.version>
         <joda-time.orbit.version>2.8.2.wso2v1</joda-time.orbit.version>
         <joda-time.orbit.version.range>[2.8.2,3.0.0)</joda-time.orbit.version.range>
-        <xmltooling.version>1.4.4</xmltooling.version>
+        <xmltooling.version>1.4.6</xmltooling.version>
         <openws.version>1.5.4</openws.version>
         <esapi.version>2.0.1</esapi.version>
         <opensaml.orbit.version>2.6.4.wso2v3</opensaml.orbit.version>
