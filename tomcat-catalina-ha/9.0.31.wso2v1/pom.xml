@@ -56,8 +56,8 @@
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
                         <Export-Package>
-                            org.apache.catalina.ha.*;version="${version.tomcat}",
-                            org.apache.catalina.ha.session.*;version="${version.tomcat}"
+                            org.apache.catalina.ha.*;version="${export.version.tomcat}",
+                            org.apache.catalina.ha.session.*;version="${export.version.tomcat}"
                         </Export-Package>
                         <Import-Package>
                             *;resolution:=optional
@@ -70,6 +70,7 @@
     </build>
     
     <properties>
-        <version.tomcat>9.0.31</version.tomcat>
+	<export.version.tomcat>9.0.31</export.version.tomcat>
+        <version.tomcat>9.0.34</version.tomcat>
     </properties>
 </project>
