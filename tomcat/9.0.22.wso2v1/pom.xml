@@ -134,7 +134,7 @@
     </build>
 
     <properties>
-        <version.tomcat.dependency>9.0.31</version.tomcat.dependency>
+        <version.tomcat.dependency>9.0.34</version.tomcat.dependency>
         <version.tomcat>9.0.22</version.tomcat>
         <version.ecj>4.6.1</version.ecj>
     </properties>
