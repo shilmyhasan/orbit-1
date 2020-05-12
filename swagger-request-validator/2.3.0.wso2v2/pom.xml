@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ ~ Copyright (c) 2020, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+ ~
+ ~ WSO2 Inc. licenses this file to you under the Apache License,
+ ~ Version 2.0 (the "License"); you may not use this file except
+ ~ in compliance with the License.
+ ~ You may obtain a copy of the License at
+ ~
+ ~    http://www.apache.org/licenses/LICENSE-2.0
+ ~
+ ~ Unless required by applicable law or agreed to in writing,
+ ~ software distributed under the License is distributed on an
+ ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ ~ KIND, either express or implied.  See the License for the
+ ~ specific language governing permissions and limitations
+ ~ under the License.
+ -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.wso2.orbit.com.atlassian.oai</groupId>
+    <artifactId>swagger-request-validator-core</artifactId>
+    <version>2.3.0.wso2v2</version>
+    <packaging>bundle</packaging>
+    <name>WSO2 Carbon Orbit - swagger-request-validator-core (swagger-request-validator)</name>
+    <description>
+        This bundle will export packages from swagger-request-validator-core libraries of swagger-request-validator
+    </description>
+    <url>http://wso2.org</url>
+
+    <distributionManagement>
+        <repository>
+            <id>wso2.releases</id>
+            <name>WSO2 internal Repository</name>
+            <url>http://maven.wso2.org/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.atlassian.oai</groupId>
+            <artifactId>swagger-request-validator-core</artifactId>
+            <version>${swagger-request-validator.version}</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.github.java-json-tools</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>${json-schema-validator-version}</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-core</artifactId>
+            <version>${io-swagger-version}</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-models</artifactId>
+            <version>${io-swagger-version}</version>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>${apache-felix-plugin-version}</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+                        <Bundle-Name>${project.artifactId}</Bundle-Name>
+                        <Export-Package>
+                            com.atlassian.oai.*;version="${swagger-request-validator.version}",
+                            swagger.validation.*;version ="${swagger-request-validator.version}",
+                        </Export-Package>
+                        <Import-Package>
+                            com.fasterxml.jackson.core; version="${jackson-version-range}",
+                            com.fasterxml.jackson.core.util;version="${jackson-version-range}",
+                            com.fasterxml.jackson.dataformat.yaml; version="${jackson-version-range}",
+                            com.fasterxml.jackson.databind; version="${jackson-version-range}",
+                            com.fasterxml.jackson.databind.annotation; version="${jackson-version-range}",
+                            com.fasterxml.jackson.annotation.*; version="${jackson-version-range}",
+                            com.fasterxml.jackson.databind.node; version="${jackson-version-range}",
+                            com.fasterxml.jackson.databind.module; version="${jackson-version-range}",
+                            com.fasterxml.jackson.databind.type; version="${jackson-version-range}",
+                            com.fasterxml.jackson.databind.ser; version="${jackson-version-range}",
+                            com.github.fge.jsonschema.core.*; version="${json-schema-version-range}",
+                            com.github.fge.msgsimple.load.*; version="${msg.simple.version}",
+                            com.github.fge.msgsimple.bundle; version="${msg.simple.version}",
+                            com.github.fge.*; version="${btf.version}",
+                            com.google.common.base.*; version="${com.google.common.imp.pkg.version}",
+                            io.swagger.v3.oas.models.*; version="${io.swagger.v3.oas.models.version}",
+                            org.joda.time.format; version="${org.joda.time.imp.pkg.version.range}",
+                            org.joda.time; version="${org.joda.time.imp.pkg.version.range}",
+                            javax.mail.internet;version="${javax.mail.internet.imp.pkg.version.range}",
+                            org.apache.commons.lang3.*; version="${commons-lang3.import.version}",
+                            io.swagger.parser; version="${swagger-parser-version-range}",
+                            io.swagger.v3.parser.core.models; version="${swagger-parser-version-range}"
+                        </Import-Package>
+                        <DynamicImport-Package>*</DynamicImport-Package>
+                        <Private-Package>
+                        </Private-Package>
+                        <Embed-Dependency>
+                            swagger-models;version=${io-swagger-version};scope=compile|runtime;inline=false,
+                            swagger-core;version=${io-swagger-version};scope=compile|runtime;inline=false,
+                            json-schema-validator;version=${json-schema-validator-version};scope=compile|runtime;inline=false
+                        </Embed-Dependency>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <properties>
+        <swagger-request-validator.version>2.3.0</swagger-request-validator.version>
+        <json-schema-validator-version>2.2.8</json-schema-validator-version>
+        <io-swagger-version>1.5.24</io-swagger-version>
+        <apache-felix-plugin-version>3.3.0</apache-felix-plugin-version>
+        <msg.simple.version>1.1</msg.simple.version>
+        <btf.version>1.2</btf.version>
+        <com.google.common.imp.pkg.version>20.0.0</com.google.common.imp.pkg.version>
+        <jackson-version-range>[2.6.0, 3.0.0)</jackson-version-range>
+        <json-schema-version-range>[1.2,2)</json-schema-version-range>
+        <swagger-parser-version-range>[2.0.5,2.0.13)</swagger-parser-version-range>
+        <javax.mail.internet.imp.pkg.version.range>[1.6,2)</javax.mail.internet.imp.pkg.version.range>
+        <org.joda.time.imp.pkg.version.range>[2.6.0, 3.0.0)</org.joda.time.imp.pkg.version.range>
+        <commons-lang3.import.version>[3.3.2, 3.3.3)</commons-lang3.import.version>
+        <io.swagger.v3.oas.models.version>2.0.4</io.swagger.v3.oas.models.version>
+    </properties>
+</project>
