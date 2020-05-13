@@ -103,9 +103,9 @@
                             javax.mail.internet;version="${javax.mail.internet.imp.pkg.version.range}",
                             org.apache.commons.lang3.*; version="${commons-lang3.import.version}",
                             io.swagger.parser; version="${swagger-parser-version-range}",
-                            io.swagger.v3.parser.core.models; version="${swagger-parser-version-range}"
+                            io.swagger.v3.parser.core.models; version="${swagger-parser-version-range}",
+                            com.google.i18n.phonenumbers;version="${google-phonenumber-imp-version-range}
                         </Import-Package>
-                        <DynamicImport-Package>*</DynamicImport-Package>
                         <Private-Package>
                         </Private-Package>
                         <Embed-Dependency>
@@ -129,10 +129,11 @@
         <com.google.common.imp.pkg.version>20.0.0</com.google.common.imp.pkg.version>
         <jackson-version-range>[2.6.0, 3.0.0)</jackson-version-range>
         <json-schema-version-range>[1.2,2)</json-schema-version-range>
-        <swagger-parser-version-range>[2.0.5,2.0.13)</swagger-parser-version-range>
+        <swagger-parser-version-range>[2.0.5,2.0.14)</swagger-parser-version-range>
         <javax.mail.internet.imp.pkg.version.range>[1.6,2)</javax.mail.internet.imp.pkg.version.range>
         <org.joda.time.imp.pkg.version.range>[2.6.0, 3.0.0)</org.joda.time.imp.pkg.version.range>
         <commons-lang3.import.version>[3.3.2, 3.3.3)</commons-lang3.import.version>
         <io.swagger.v3.oas.models.version>2.0.4</io.swagger.v3.oas.models.version>
+        <google-phonenumber-imp-version-range>[7.4.0, 7.5.0)</google-phonenumber-imp-version-range>
     </properties>
 </project>
