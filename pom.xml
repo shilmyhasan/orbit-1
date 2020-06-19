@@ -136,7 +136,6 @@
         <module>cxf/2.7.16.wso2v1</module>
         <module>openid4java/1.0.0.wso2v1</module>
         <module>csrfguard/3.1.0.wso2v2</module>
-        <module>csrfguard/3.1.0.wso2v3</module>
         <module>jboss-netty/3.9.0.Final</module>
         <module>geronimo-kernel/2.0.1.wso2v1</module>
         <module>smooks/1.5.1.wso2v1</module>
