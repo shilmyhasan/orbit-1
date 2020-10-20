@@ -39,6 +39,7 @@
     </distributionManagement>
 
     <modules>
+        <module>antlr/4.7.2.wso2v1</module>
         <module>bcprov/1.49.0.wso2v2</module>
         <module>bcprov/1.52.0.wso2v1</module>
         <module>bcpkix/1.60.0wso2v1</module>
