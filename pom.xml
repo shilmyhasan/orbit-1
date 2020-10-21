@@ -46,7 +46,9 @@
         <module>bcpkix/1.49.0.wso2v2</module>
         <module>bcpkix/1.52.0.wso2v2</module>
         <module>batik/1.7.0.wso2v1</module>
+        <module>disruptor/3.4.2.wso2v1</module>
         <module>h2/1.2.140.wso2v3</module>
+        <module>handlebars/4.0.7.wso2v1</module>
         <module>hazelcast/3.5.0.wso2v1</module>
         <module>hazelcast/3.5.2.wso2v1</module>
         <module>commons-collections/3.2.0.wso2v1</module>
