@@ -129,7 +129,7 @@
         <version.apache.coyote>1.7.0</version.apache.coyote>
         <version.apache.el>1.7.0</version.apache.el>
         <version.javax.websocket>1.7.0</version.javax.websocket>
-        <version.tomcat>7.0.92</version.tomcat>
+        <version.tomcat>7.0.107</version.tomcat>
         <version.ecj>4.3.1</version.ecj>
     </properties>
 </project>
