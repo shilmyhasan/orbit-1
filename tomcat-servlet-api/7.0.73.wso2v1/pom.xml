@@ -74,6 +74,6 @@
 
     <properties>
         <version.javax.servlet>2.6.0</version.javax.servlet>
-        <version.tomcat>7.0.92</version.tomcat>
+        <version.tomcat>7.0.107</version.tomcat>
     </properties>
 </project>
