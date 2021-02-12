@@ -39,12 +39,16 @@
     </distributionManagement>
 
     <modules>
+        <module>antlr/4.7.2.wso2v1</module>
         <module>bcprov/1.49.0.wso2v2</module>
         <module>bcprov/1.52.0.wso2v1</module>
         <module>bcpkix/1.60.0wso2v1</module>
         <module>bcpkix/1.49.0.wso2v2</module>
         <module>bcpkix/1.52.0.wso2v2</module>
+        <module>batik/1.7.0.wso2v1</module>
+        <module>disruptor/3.4.2.wso2v1</module>
         <module>h2/1.2.140.wso2v3</module>
+        <module>handlebars/4.0.7.wso2v1</module>
         <module>hazelcast/3.5.0.wso2v1</module>
         <module>hazelcast/3.5.2.wso2v1</module>
         <module>commons-collections/3.2.0.wso2v1</module>
@@ -135,7 +139,6 @@
         <module>cxf/2.7.16.wso2v1</module>
         <module>openid4java/1.0.0.wso2v1</module>
         <module>csrfguard/3.1.0.wso2v2</module>
-        <module>csrfguard/3.1.0.wso2v3</module>
         <module>jboss-netty/3.9.0.Final</module>
         <module>geronimo-kernel/2.0.1.wso2v1</module>
         <module>smooks/1.5.1.wso2v1</module>
@@ -147,6 +150,7 @@
         <module>nimbus/5.8.0.wso2v1</module>
         <module>swagger-request-validator/2.3.0.wso2v1</module>
         <module>swagger-request-validator/2.3.0.wso2v2</module>
+        <module>swagger-parser/2.0.13.OpenAPITools.wso2v1</module>
         <module>yubico-webauthn/1.3.0.wso2v1</module>
         <module>js/1.7.0.R4.wso2v1</module>
         <module>commons-collections4/4.1.0.wso2v1</module>

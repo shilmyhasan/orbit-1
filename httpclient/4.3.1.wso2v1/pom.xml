@@ -94,7 +94,7 @@
     </build>
 
     <properties>
-        <version.httpclient>4.3.1</version.httpclient>
+        <version.httpclient>4.3.6</version.httpclient>
         <orbit.version.httpclient>${version.httpclient}.wso2v1</orbit.version.httpclient>
     </properties>
 </project>

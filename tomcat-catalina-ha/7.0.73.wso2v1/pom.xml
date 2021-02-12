@@ -73,6 +73,6 @@
     <properties>
         <version.apache.catalina.ha>1.7.0</version.apache.catalina.ha>
         <version.apache.catalina.ha.session>1.7.0</version.apache.catalina.ha.session>
-        <version.tomcat>7.0.92</version.tomcat>
+        <version.tomcat>7.0.107</version.tomcat>
     </properties>
 </project>
