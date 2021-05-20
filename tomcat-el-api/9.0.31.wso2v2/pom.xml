@@ -21,16 +21,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.wso2.orbit.org.apache.tomcat</groupId>
-    <artifactId>tomcat-servlet-api</artifactId>
-    <version>9.0.45.wso2v1</version>
+    <artifactId>tomcat-el-api</artifactId>
+    <version>9.0.31.wso2v2</version>
     <packaging>bundle</packaging>
-    <name>tomcat servlet api orbit bundle - 9.0.45.wso2v1</name>
-    <description>Apache Tomcat Servlet API</description>
+    <name>tomcat eel api orbit bundle - 9.0.31.wso2v2</name>
+    <description>Apache Tomcat EL API</description>
 
     <dependencies>
         <dependency>
             <groupId>org.apache.tomcat</groupId>
-            <artifactId>tomcat-servlet-api</artifactId>
+            <artifactId>tomcat-el-api</artifactId>
             <version>${version.tomcat}</version>
             <optional>true</optional>
         </dependency>
@@ -56,10 +56,8 @@
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
                         <Export-Package>
-                            javax.servlet.*;version="2.6.0"
+                            javax.el;version="3.0.0"
                         </Export-Package>
-                        <Private-Package>
-                        </Private-Package>
                         <Import-Package>
                             *;resolution:=optional
                         </Import-Package>
