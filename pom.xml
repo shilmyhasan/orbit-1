@@ -173,6 +173,7 @@
         <module>tomcat-websocket/9.0.31.wso2v1</module>
         <module>tomcat-websocket/9.0.31.wso2v2</module>
         <module>xerces/2.8.1.wso2v2</module>
+        <module>xerces/2.8.1.wso2v3</module>
     </modules>
 
     <build>
