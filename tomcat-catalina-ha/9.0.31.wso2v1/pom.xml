@@ -70,7 +70,7 @@
     </build>
     
     <properties>
-	<export.version.tomcat>9.0.31</export.version.tomcat>
-        <version.tomcat>9.0.34</version.tomcat>
+	    <export.version.tomcat>9.0.31</export.version.tomcat>
+        <version.tomcat>9.0.45</version.tomcat>
     </properties>
 </project>
