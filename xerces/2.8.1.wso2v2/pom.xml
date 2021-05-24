@@ -29,7 +29,7 @@
         <dependency>
             <groupId>xml-apis</groupId>
             <artifactId>xml-apis</artifactId>
-            <version>1.3.04</version>
+            <version>1.4.01</version>
             <optional>true</optional>
         </dependency>
         <dependency>
@@ -50,8 +50,8 @@
                     <instructions>
                         <Bundle-SymbolicName>${pom.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${pom.artifactId}</Bundle-Name>
-                        <Export-Package> javax.xml.parsers.*;version="1.3.04", org.apache.xml.serialize.*, org.apache.xerces.*, org.apache.html.* </Export-Package>
-                        <Import-Package> !javax.xml.parsers.*;version="1.3.04", !org.apache.xerces.*, !org.apache.xml.serialize.*, *;resolution:=optional </Import-Package>
+                        <Export-Package> javax.xml.parsers.*;version="1.4.01", org.apache.xml.serialize.*, org.apache.xerces.*, org.apache.html.*, org.w3c.dom.* </Export-Package>
+                        <Import-Package> !javax.xml.parsers.*;version="1.4.01", !org.apache.xerces.*, !org.apache.xml.serialize.*, *;resolution:=optional </Import-Package>
                         <Include-Resource> @xercesImpl-2.12.1.jar!/META-INF/services/** </Include-Resource>
                         <DynamicImport-Package>*</DynamicImport-Package>
                     </instructions>
