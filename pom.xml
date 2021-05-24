@@ -76,6 +76,7 @@
         <module>tomcat/7.0.81.wso2v1</module>
         <module>tomcat/7.0.85.wso2v1</module>
         <module>tomcat/7.0.93.wso2v1</module>
+        <module>tomcat/9.0.31.wso2v2</module>
         <module>tomcat-catalina-ha/7.0.69.wso2v1</module>
         <module>tomcat-el-api/7.0.69.wso2v1</module>
         <module>tomcat-jsp-api/7.0.69.wso2v1</module>
@@ -92,6 +93,7 @@
         <module>tomcat-catalina-ha/9.0.22.wso2v1</module>
         <module>tomcat-catalina-ha/9.0.21.wso2v1</module>
         <module>tomcat-catalina-ha/9.0.31.wso2v1</module>
+        <module>tomcat-catalina-ha/9.0.31.wso2v2</module>
         <module>tomcat-el-api/7.0.73.wso2v1</module>
         <module>tomcat-el-api/7.0.75.wso2v1</module>
         <module>tomcat-el-api/7.0.81.wso2v1</module>
@@ -100,6 +102,7 @@
         <module>tomcat-el-api/9.0.22.wso2v1</module>
         <module>tomcat-el-api/9.0.21.wso2v1</module>
         <module>tomcat-el-api/9.0.31.wso2v1</module>
+        <module>tomcat-el-api/9.0.31.wso2v2</module>
         <module>tomcat-jsp-api/7.0.73.wso2v1</module>
         <module>tomcat-jsp-api/7.0.75.wso2v1</module>
         <module>tomcat-jsp-api/7.0.81.wso2v1</module>
