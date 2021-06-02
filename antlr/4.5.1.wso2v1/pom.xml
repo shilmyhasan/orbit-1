@@ -54,14 +54,15 @@
         <dependency>
             <groupId>org.antlr</groupId>
             <artifactId>antlr4-runtime</artifactId>
-            <version>4.5.1</version>
+            <version>${antlr.runtime.version}</version>
             <optional>true</optional>
         </dependency>
     </dependencies>
 
     <properties>
-        <antlr.runtime.version>4.5.1</antlr.runtime.version>
-        <orbit.version.antlr>${antlr.runtime.version}.wso2v1</orbit.version.antlr>
+        <export.version.antlr.runtime>4.5.1</export.version.antlr.runtime>
+        <antlr.runtime.version>4.7.2</antlr.runtime.version>
+        <orbit.version.antlr>${export.version.antlr.runtime}.wso2v1</orbit.version.antlr>
     </properties>
 
     <build>
