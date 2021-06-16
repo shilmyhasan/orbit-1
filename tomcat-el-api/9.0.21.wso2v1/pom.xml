@@ -55,6 +55,9 @@
                     <instructions>
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
+                        <Private-Package>
+                            javax.el.*;version="3.0"
+                        </Private-Package>
                         <Export-Package>
                             javax.el;version="3.0.0"
                         </Export-Package>
@@ -69,6 +72,6 @@
     </build>
 
     <properties>
-        <version.tomcat>9.0.44</version.tomcat>
+        <version.tomcat>9.0.45</version.tomcat>
     </properties>
 </project>
