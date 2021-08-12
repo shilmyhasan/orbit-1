@@ -139,6 +139,7 @@
         <module>jdbc-pool/9.0.35.wso2v1</module>
         <module>solr/5.2.1.wso2v1</module>
         <module>httpclient/4.3.1.wso2v2</module>
+        <module>httpclient/4.3.6.wso2v2</module>
         <module>netty/4.0.30.Final</module>
         <module>jackson-core/2.6.1.wso2v1</module>
         <module>tranql-connector/1.1.0.wso2v1</module>
@@ -158,6 +159,7 @@
         <module>jboss-netty/3.9.0.Final</module>
         <module>geronimo-kernel/2.0.1.wso2v1</module>
         <module>smooks/1.5.1.wso2v1</module>
+        <module>snakeyaml/1.16.0.wso2v1</module>
         <module>swagger-codegen/2.2.3.wso2v1</module>
         <module>swagger-inflector/1.0.16.wso2v1</module>
         <module>jsch/0.1.51.wso2v1</module>
