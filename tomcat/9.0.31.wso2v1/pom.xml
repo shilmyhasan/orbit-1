@@ -98,6 +98,7 @@
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
                 <extensions>true</extensions>
+                <version>2.4.0</version>
                 <configuration>
                     <instructions>
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
@@ -135,7 +136,7 @@
 
     <properties>
 	     <export.version.tomcat>9.0.31</export.version.tomcat>
-        <version.tomcat>9.0.34</version.tomcat>
+        <version.tomcat>9.0.52</version.tomcat>
         <version.ecj>4.6.1</version.ecj>
     </properties>
 </project>
