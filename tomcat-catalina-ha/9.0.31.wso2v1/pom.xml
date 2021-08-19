@@ -71,6 +71,6 @@
     
     <properties>
 	    <export.version.tomcat>9.0.31</export.version.tomcat>
-        <version.tomcat>9.0.34</version.tomcat>
+        <version.tomcat>9.0.52</version.tomcat>
     </properties>
 </project>
