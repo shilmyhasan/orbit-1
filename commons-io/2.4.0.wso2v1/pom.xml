@@ -61,7 +61,7 @@
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
-            <version>2.4</version>
+            <version>${version.commons-io}</version>
             <optional>true</optional>
         </dependency>
     </dependencies>
@@ -71,15 +71,16 @@
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
-                <version>1.4.0</version>
+                <version>3.2.0</version>
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
                         <Export-Package>
-                            org.apache.commons.io.*;version="${version.commons-io}"
+                            org.apache.commons.io.*;version="${export.version.commons-io}"
                         </Export-Package>
+                        <Private-Package/>
                         <Import-Package>
                             !org.apache.commons.io.*,
                             *;resolution:=optional
@@ -91,7 +92,8 @@
     </build>
 
     <properties>
-        <version.commons-io>2.4.0</version.commons-io>
+        <export.version.commons-io>2.4.0</export.version.commons-io>
+        <version.commons-io>2.11.0</version.commons-io>
     </properties>
 
 </project>
