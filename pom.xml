@@ -128,6 +128,7 @@
         <module>rabbit-mq/3.4.4.wso2v1</module>
         <module>opensaml/2.6.4.wso2v3</module>
         <module>opensaml/2.4.1.wso2v1</module>
+        <module>opensaml/3.3.1.wso2v2</module>
         <module>json-schema-validator-all/2.2.6.wso2v1</module>
         <module>json-schema-validator-all/2.2.6.wso2v2</module>
         <module>json-schema-validator-all/2.2.6.wso2v4</module>
