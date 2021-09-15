@@ -119,6 +119,7 @@
                             org.apache.juli
                         </Private-Package>
                         <Import-Package>
+                            javax.annotation;version="0.0.0",
                             *;resolution:=optional
                         </Import-Package>
                         <DynamicImport-Package>*</DynamicImport-Package>
