@@ -43,7 +43,6 @@
         <module>antlr/4.5.1.wso2v1</module>
         <module>bcprov/1.49.0.wso2v2</module>
         <module>bcprov/1.52.0.wso2v1</module>
-        <module>bcprov/1.60.0.wso2v1</module>
         <module>bcprov/1.68.0.wso2v1</module>
         <module>bcpkix/1.60.0wso2v1</module>
         <module>bcpkix/1.49.0.wso2v2</module>
