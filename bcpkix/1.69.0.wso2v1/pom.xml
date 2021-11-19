@@ -69,17 +69,6 @@
              with this orbit bundle.-->
             <optional>false</optional>
         </dependency>
-        <dependency>
-            <groupId>org.bouncycastle</groupId>
-            <artifactId>bcutil-jdk15on</artifactId>
-            <version>1.69</version>
-            <!-- By setting optional false, dependent projects of this orbit bundle will be able to see bcprov-jdk15on
-             library as a transitive dependency. This is required because we are embedding bcprov-jdk15on library inside
-             this orbit bundle without extracting the content, becuase bcprov-jdk15on library is signed. If you embed a
-             dependency and set optional to true, then dependent projects will not be alble to compile their source
-             with this orbit bundle.-->
-            <optional>false</optional>
-        </dependency>
     </dependencies>
 
     <build>
@@ -103,8 +92,7 @@
                             org.bouncycastle.asn1.*;version="${imp.pkg.version.range.bcprov}",
                             *;resolution:=optional
                         </Import-Package>
-                        <Embed-Dependency>bcpkix-jdk15on;scope=compile|runtime;inline=false,
-                            bcutil-jdk15on;scope=compile|runtime;inline=false
+                        <Embed-Dependency>bcpkix-jdk15on;scope=compile|runtime;inline=false
                         </Embed-Dependency>
                         <_exportcontents>
                             org.bouncycastle.cert;version="${exp.pkg.version.bcpkix}",
