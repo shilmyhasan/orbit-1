@@ -188,7 +188,6 @@
         <module>openapi-generator/4.3.1.wso2v1</module>
         <module>olingo-server/4.4.0.wso2v2</module>
         <module>commons-collections4/4.4.0.wso2v1</module>
-        <module>uap-java/1.5.2.wso2v1</module>
     </modules>
 
     <build>
