@@ -34,7 +34,7 @@
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpcore</artifactId>
-            <version>4.4.14</version>
+            <version>4.3.3</version>
             <optional>true</optional>
         </dependency>
     </dependencies>
@@ -91,7 +91,7 @@
 
     <properties>
         <orbit.patch.version.httpcore>4.3.3.wso2v1</orbit.patch.version.httpcore>
-        <httpcore.patch.version>4.4.14</httpcore.patch.version>
+        <httpcore.patch.version>4.3.3</httpcore.patch.version>
     </properties>
 
 </project>
