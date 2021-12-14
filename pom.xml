@@ -185,6 +185,7 @@
         <module>tomcat-websocket/9.0.31.wso2v1</module>
         <module>xerces/2.8.1.wso2v2</module>
         <module>xerces/2.8.1.wso2v3</module>
+        <module>xmlbeans/2.3.0.wso2v1</module>
         <module>openapi-generator/4.3.1.wso2v1</module>
         <module>olingo-server/4.4.0.wso2v2</module>
         <module>commons-collections4/4.4.0.wso2v1</module>
