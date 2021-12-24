@@ -1,5 +1,5 @@
 <!--
- ~ Copyright (c) 2015, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+ ~ Copyright (c) 2021, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
  ~
  ~ WSO2 Inc. licenses this file to you under the Apache License,
  ~ Version 2.0 (the "License"); you may not use this file except
@@ -24,9 +24,9 @@
     <artifactId>commons-io</artifactId>
     <packaging>bundle</packaging>
     <name>commons.io.wso2</name>
-    <version>2.4.0.wso2v1</version>
+    <version>2.11.0.wso2v1</version>
     <description>
-        This bundle will represent apache commons-io 2.4
+        This bundle will represent apache commons-io 2.11.0
     </description>
     <url>http://wso2.org</url>
 
@@ -61,7 +61,7 @@
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
-            <version>2.4</version>
+            <version>2.11.0</version>
             <optional>true</optional>
         </dependency>
     </dependencies>
@@ -71,7 +71,7 @@
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
-                <version>1.4.0</version>
+                <version>3.3.0</version>
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
@@ -84,6 +84,8 @@
                             !org.apache.commons.io.*,
                             *;resolution:=optional
                         </Import-Package>
+                        <Private-Package>
+                        </Private-Package>
                     </instructions>
                 </configuration>
             </plugin>
@@ -91,7 +93,7 @@
     </build>
 
     <properties>
-        <version.commons-io>2.4</version.commons-io>
+        <version.commons-io>2.11.0</version.commons-io>
     </properties>
 
 </project>
