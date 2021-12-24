@@ -58,6 +58,7 @@
         <module>hazelcast/3.5.2.wso2v1</module>
         <module>commons-collections/3.2.0.wso2v1</module>
         <module>commons-io/2.4.0.wso2v1</module>
+        <module>commons-io/2.11.0.wso2v1</module>
         <module>tomcat/7.0.34.wso2v1</module>
         <module>tomcat/7.0.28.wso2v1</module>
         <module>tomcat/7.0.59.wso2v3</module>
@@ -144,7 +145,7 @@
         <module>jdbc-pool/7.0.34.wso2v2</module>
         <module>jdbc-pool/9.0.35.wso2v1</module>
         <module>solr/5.2.1.wso2v1</module>
-        <module>solr/5.5.5.wso2v1</module>
+        <module>solr/5.5.5.wso2v2</module>
         <module>httpclient/4.3.1.wso2v2</module>
         <module>httpclient/4.3.6.wso2v2</module>
         <module>httpcore/4.3.3-wso2v1</module>
