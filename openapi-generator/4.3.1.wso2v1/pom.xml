@@ -192,7 +192,7 @@
                             swift;version="${export.pkg.version.swagger-codegen}",
                             swift3;version="${export.pkg.version.swagger-codegen}",
                             swift4;version="${export.pkg.version.swagger-codegen}",
-                            swift5;version="${export.pkg.version.swagger-codegen}",
+                            swift5.*;version="${export.pkg.version.swagger-codegen}",
                             typescript-angular;version="${export.pkg.version.swagger-codegen}",
                             typescript-angularjs;version="${export.pkg.version.swagger-codegen}",
                             typescript-aurelia;version="${export.pkg.version.swagger-codegen}",
