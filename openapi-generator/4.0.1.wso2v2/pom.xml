@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
- ~ Copyright (c) 2020, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+ ~ Copyright (c) 2019, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
  ~
  ~ WSO2 Inc. licenses this file to you under the Apache License,
  ~ Version 2.0 (the "License"); you may not use this file except
@@ -23,7 +23,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.wso2.orbit.org.openapitools</groupId>
     <artifactId>openapi-generator</artifactId>
-    <version>4.3.1.wso2v1</version>
+    <version>4.0.1.wso2v2</version>
     <packaging>bundle</packaging>
     <name>WSO2 Carbon Orbit - openapi-generator (org.openapitools)</name>
     <description>
@@ -35,7 +35,7 @@
         <repository>
             <id>wso2.releases</id>
             <name>WSO2 internal Repository</name>
-            <url>https://maven.wso2.org/nexus/content/repositories/releases/</url>
+            <url>http://maven.wso2.org/nexus/content/repositories/releases/</url>
         </repository>
     </distributionManagement>
 
@@ -44,6 +44,31 @@
             <groupId>org.openapitools</groupId>
             <artifactId>openapi-generator</artifactId>
             <version>5.3.0</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.github.jknack</groupId>
+            <artifactId>handlebars</artifactId>
+            <version>4.0.6</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.samskivert</groupId>
+            <artifactId>jmustache</artifactId>
+            <version>1.13</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.9.9</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-utils</artifactId>
+            <version>1.5.7</version>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -60,15 +85,18 @@
             <artifactId>slf4j-simple</artifactId>
             <version>${slf4j.api.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.codehaus.plexus/plexus-interpolation -->
         <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>${commons-io-version}</version>
+            <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-interpolation</artifactId>
+            <version>1.24</version>
+            <optional>true</optional>
         </dependency>
-               <dependency>
-           <groupId>com.atlassian.commonmark</groupId>
-           <artifactId>commonmark</artifactId>
-           <version>0.11.0</version>
+        <!-- https://mvnrepository.com/artifact/com.atlassian.commonmark/commonmark -->
+        <dependency>
+            <groupId>com.atlassian.commonmark</groupId>
+            <artifactId>commonmark</artifactId>
+            <version>0.12.1</version>
         </dependency>
     </dependencies>
 
@@ -87,8 +115,6 @@
                             !io.swagger.models.*,
                             !io.swagger.annotations.*,
                             !io.swagger.v3.*,
-                            !com.google.common.base,
-                            !com.google.common.collect,
                             Ada;version="${export.pkg.version.swagger-codegen}",
                             C-libcurl;version="${export.pkg.version.swagger-codegen}",
                             Eiffel.*;version="${export.pkg.version.swagger-codegen}",
@@ -127,7 +153,7 @@
                             dart-jaguar;version="${export.pkg.version.swagger-codegen}",
                             dart-jaguar.auth;version="${export.pkg.version.swagger-codegen}",
                             dart.auth;version="${export.pkg.version.swagger-codegen}",
-                            dart2;version="${export.pkg.version.swagger-codegen}",
+                            dart2.*;version="${export.pkg.version.swagger-codegen}",
                             dart2.auth;version="${export.pkg.version.swagger-codegen}",
                             elixir;version="${export.pkg.version.swagger-codegen}",
                             elm;version="${export.pkg.version.swagger-codegen}",
@@ -209,8 +235,7 @@
                         <Import-Package>
                             io.swagger.v3.*;version="${import.openapitools.parser.version.range}",
                             io.swagger.parser.*;version="${import.openapitools.parser.version.range}",
-                            com.fasterxml.jackson.datatype.guava; version="${jackson.version.range}",
-                            com.google.common.*; version="${google.version.range}",
+                            com.fasterxml.jackson.*,
                             org.slf4j.ext,
                             *.;resolution=optional
                         </Import-Package>
@@ -221,25 +246,17 @@
                             @openapi-generator-5.3.0.jar!/META-INF/services/*
                         </Include-Resource>
                         <_exportcontents>
-                            com.github.jknack.handlebars,
-                            com.gicommons-iothub.jknack.handlebars.context,
-                            com.github.jknack.handlebars.helper,
-                            com.github.jknack.handlebars.io,
-                            com.google.common.base,
-                            com.google.common.collect,
-                            com.google.common.io,
-                            com.mifmif.common.regex,
-                            javax.annotation,
-                            org.apache.commons.io,
-                            org.commonmark.node,
-                            org.commonmark.parser,
-                            org.commonmark.renderer.html,
                             org.slf4j.ext
                         </_exportcontents>
                         <Embed-Dependency>
+                            jmustache;scope=compile|runtime;inline=false,
+                            joda-time;scope=compile|runtime;inline=false,
+                            plexus-utils;scope=compile|runtime;inline=false,
+                            plexus-interpolation;scope=compile|runtime;inline=false,
+                            joda-convert;scope=compile|runtime;inline=false,
+                            handlebars;scope=compile|runtime;inline=false,
+                            commonmark;scope=compile|runtime;inline=false,
                             slf4j-ext;scope=compile|runtime;inline=false,
-                            commons-io;scope=compile|runtime;inline=false,
-                            commonmark;scope=compile|runtime;inline=false
                         </Embed-Dependency>
                         <DynamicImport-Package>*</DynamicImport-Package>
                     </instructions>
@@ -249,16 +266,10 @@
     </build>
 
     <properties>
-        <export.pkg.version.swagger-codegen>4.3.1.wso2v1</export.pkg.version.swagger-codegen>
+        <export.pkg.version.swagger-codegen>4.0.1.wso2v2</export.pkg.version.swagger-codegen>
         <import.pkg.version.swagger-codegen>5.3.0</import.pkg.version.swagger-codegen>
-        <jmustache-version>1.14</jmustache-version>
-        <handlebars.java-version>4.1.2</handlebars.java-version>
-        <slf4j.api.version>1.7.12</slf4j.api.version>
-        <commons-io-version>2.4</commons-io-version>
-        <jackson.version.range>[2.7.0,3.0.0)</jackson.version.range>
-        <google.version.range>[27.0.0,28.0.0)</google.version.range>
-        <slf4j.version.range>[1.7.0,1.8.0)</slf4j.version.range>
-        <import.openapitools.parser.version.range>[2.0, 3.0)</import.openapitools.parser.version.range>
+        <import.openapitools.parser.version.range>[2.0.13.OpenAPITools.wso2v1, 2.0.20)</import.openapitools.parser.version.range>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <slf4j.api.version>1.7.12</slf4j.api.version>
     </properties>
 </project>
