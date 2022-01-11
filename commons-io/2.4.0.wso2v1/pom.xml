@@ -91,7 +91,7 @@
     </build>
 
     <properties>
-        <version.commons-io>2.11</version.commons-io>
+        <version.commons-io>2.4</version.commons-io>
     </properties>
 
 </project>
