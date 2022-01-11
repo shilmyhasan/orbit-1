@@ -84,6 +84,8 @@
                             !org.apache.commons.io.*,
                             *;resolution:=optional
                         </Import-Package>
+                        <Private-Package>
+                        </Private-Package>
                     </instructions>
                 </configuration>
             </plugin>
