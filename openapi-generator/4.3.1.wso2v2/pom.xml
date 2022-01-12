@@ -127,7 +127,7 @@
                             dart-jaguar;version="${export.pkg.version.swagger-codegen}",
                             dart-jaguar.auth;version="${export.pkg.version.swagger-codegen}",
                             dart.auth;version="${export.pkg.version.swagger-codegen}",
-                            dart2;version="${export.pkg.version.swagger-codegen}",
+                            dart2.*;version="${export.pkg.version.swagger-codegen}",
                             dart2.auth;version="${export.pkg.version.swagger-codegen}",
                             elixir;version="${export.pkg.version.swagger-codegen}",
                             elm;version="${export.pkg.version.swagger-codegen}",
