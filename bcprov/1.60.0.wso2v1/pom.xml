@@ -84,7 +84,7 @@
 
     <properties>
         <exp.pkg.version.bcprov>1.70.0</exp.pkg.version.bcprov>
-        <version.bcprov>bcprov-jdk15on</version.bcprov>
+        <version.bcprov>1.70</version.bcprov>
     </properties>
 
 </project>
