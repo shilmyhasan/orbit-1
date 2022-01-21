@@ -61,7 +61,7 @@
         <dependency>
             <groupId>org.bouncycastle</groupId>
             <artifactId>bcpkix-jdk15on</artifactId>
-            <version>1.69</version>
+            <version>1.70</version>
             <!-- By setting optional false, dependent projects of this orbit bundle will be able to see bcprov-jdk15on
              library as a transitive dependency. This is required because we are embedding bcprov-jdk15on library inside
              this orbit bundle without extracting the content, becuase bcprov-jdk15on library is signed. If you embed a
@@ -72,7 +72,7 @@
         <dependency>
             <groupId>org.bouncycastle</groupId>
             <artifactId>bcutil-jdk15on</artifactId>
-            <version>1.69</version>
+            <version>1.70</version>
             <!-- By setting optional false, dependent projects of this orbit bundle will be able to see bcprov-jdk15on
              library as a transitive dependency. This is required because we are embedding bcprov-jdk15on library inside
              this orbit bundle without extracting the content, becuase bcprov-jdk15on library is signed. If you embed a
