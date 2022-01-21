@@ -83,8 +83,8 @@
     </build>
 
     <properties>
-        <exp.pkg.version.bcprov>1.60.0</exp.pkg.version.bcprov>
-        <version.bcprov>1.66</version.bcprov>
+        <exp.pkg.version.bcprov>1.70.0</exp.pkg.version.bcprov>
+        <version.bcprov>bcprov-jdk15on</version.bcprov>
     </properties>
 
 </project>
