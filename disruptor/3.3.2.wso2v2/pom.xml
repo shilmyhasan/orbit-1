@@ -62,7 +62,7 @@
     </build>
 
     <properties>
-        <disruptor.version>3.3.2</disruptor.version>
+        <disruptor.version>3.4.2</disruptor.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
