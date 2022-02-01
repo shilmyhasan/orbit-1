@@ -83,7 +83,7 @@
     </build>
 
     <properties>
-        <exp.pkg.version.bcprov>1.70.0</exp.pkg.version.bcprov>
+        <exp.pkg.version.bcprov>1.60.0</exp.pkg.version.bcprov>
         <version.bcprov>1.70</version.bcprov>
     </properties>
 
