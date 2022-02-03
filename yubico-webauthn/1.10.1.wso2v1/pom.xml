@@ -87,6 +87,11 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <dependency>
+            <groupId>com.upokecenter</groupId>
+            <artifactId>cbor</artifactId>
+            <version>${com.upokecenter.cbor.version}</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -155,6 +160,7 @@
 
     <properties>
         <com.yubico.webauthn.version>1.10.1</com.yubico.webauthn.version>
+        <com.upokecenter.cbor.version>4.5.2</com.upokecenter.cbor.version>
         <guava.osgi.version.range>[18.0.0,30.0.0)</guava.osgi.version.range>
         <apache.commons.codec.version.range>[1.10.0, 2.0.0)</apache.commons.codec.version.range>
         <apache.commons.logging.version.range>[1.1.0, 2.0.0)</apache.commons.logging.version.range>
