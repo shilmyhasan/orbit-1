@@ -31,7 +31,7 @@
         <dependency>
             <groupId>ch.qos.reload4j</groupId>
             <artifactId>reload4j</artifactId>
-            <version>${version.reload4j}</version>
+            <version>${version.log4j}</version>
         </dependency>
     </dependencies>
 
@@ -65,7 +65,7 @@
                             *;resolution:=optional
                         </Import-Package>
                         <Export-Package>
-                            org.apache.log4j.*;version="${version.reload4j}"
+                            org.apache.log4j.*;version="${version.log4j}"
                         </Export-Package>
                     </instructions>
                 </configuration>
@@ -73,8 +73,8 @@
         </plugins>
     </build>
     <properties>
-        <version.reload4j>1.2.19</version.reload4j>
-        <orbit.version.reload4j>${version.reload4j}.wso2v1</orbit.version.reload4j>
+        <version.log4j>1.2.19</version.log4j>
+        <orbit.version.log4j>${version.log4j}.wso2v1</orbit.version.log4j>
     </properties>
 </project>
 
