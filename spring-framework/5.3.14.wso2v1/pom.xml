@@ -79,6 +79,9 @@
                         <Export-Package>
                             org.springframework.*; version=${exp.pkg.version.spring},
                         </Export-Package>
+                        <Private-Package>
+                            org.springframework.*
+                        </Private-Package>
                         <Import-Package>
 							!org.springframework.*;,
 							javax.xml.stream.*; version="[0.0.0, 1.0.0)",
