@@ -203,6 +203,7 @@
         <module>jsr105/1.0.1.wso2v1</module>
         <module>h2/2.1.210.wso2v1</module>
         <module>log4j/1.2.17.wso2v1</module>
+        <module>spring-framework/5.3.14.wso2v1</module>
         <module>groovy/2.4.8.wso2v1</module>
     </modules>
 
