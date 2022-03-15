@@ -60,72 +60,72 @@
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
                         <Export-Package>
                             org.apache.velocity;uses:="org.apache.velocity.context,org.apache.velocity.exception,
-                            org.apache.velocity.runtime.resource";version=${velocity.prev.version},
+                            org.apache.velocity.runtime.resource";version=${exp.pkg.version.velocity},
                             org.apache.velocity.anakia;uses:="com.werken.xpath,org.apache.tools.ant,
-                            org.apache.tools.ant.taskdefs,org.jdom,org.jdom.output";version=${velocity.prev.version},
+                            org.apache.tools.ant.taskdefs,org.jdom,org.jdom.output";version=${exp.pkg.version.velocity},
                             org.apache.velocity.app;uses:="org.apache.commons.collections,org.apache.velocity,
                             org.apache.velocity.context,org.apache.velocity.exception,org.apache.velocity.runtime,
-                            org.apache.velocity.runtime.log";version=${velocity.prev.version},
+                            org.apache.velocity.runtime.log";version=${exp.pkg.version.velocity},
                             org.apache.velocity.app.event;uses:="org.apache.velocity.context,
                             org.apache.velocity.runtime,org.apache.velocity.util.introspection";
-                            version=${velocity.prev.version},
+                            version=${exp.pkg.version.velocity},
                             org.apache.velocity.app.event.implement;uses:="org.apache.velocity.app.event,
                             org.apache.velocity.context,org.apache.velocity.runtime,org.apache.velocity.util,
-                            org.apache.velocity.util.introspection";version=${velocity.prev.version},
-                            org.apache.velocity.app.tools;uses:="org.apache.velocity.context";version=${velocity.prev.version},
+                            org.apache.velocity.util.introspection";version=${exp.pkg.version.velocity},
+                            org.apache.velocity.app.tools;uses:="org.apache.velocity.context";version=${exp.pkg.version.velocity},
                             org.apache.velocity.context;uses:="org.apache.velocity.app.event,
                             org.apache.velocity.exception,org.apache.velocity.runtime,
                             org.apache.velocity.runtime.parser.node,org.apache.velocity.runtime.resource,
-                            org.apache.velocity.util.introspection";version=${velocity.prev.version},
-                            org.apache.velocity.convert; version=${velocity.prev.version},
+                            org.apache.velocity.util.introspection";version=${exp.pkg.version.velocity},
+                            org.apache.velocity.convert; version=${exp.pkg.version.velocity},
                             org.apache.velocity.exception;uses:="org.apache.velocity.runtime.parser,
-                            org.apache.velocity.util.introspection";version=${velocity.prev.version},
-                            org.apache.velocity.io; version=${velocity.prev.version},
+                            org.apache.velocity.util.introspection";version=${exp.pkg.version.velocity},
+                            org.apache.velocity.io; version=${exp.pkg.version.velocity},
                             org.apache.velocity.runtime;uses:="org.apache.commons.collections,org.apache.velocity,
                             org.apache.velocity.app.event,org.apache.velocity.context,org.apache.velocity.exception,
                             org.apache.velocity.runtime.directive,org.apache.velocity.runtime.log,
                             org.apache.velocity.runtime.parser,org.apache.velocity.runtime.parser.node,
                             org.apache.velocity.runtime.resource,org.apache.velocity.util.introspection";
-                            version=${velocity.prev.version},
-                            org.apache.velocity.runtime.defaults; version=${velocity.prev.version},
+                            version=${exp.pkg.version.velocity},
+                            org.apache.velocity.runtime.defaults; version=${exp.pkg.version.velocity},
                             org.apache.velocity.runtime.directive;uses:="org.apache.velocity.context,
                             org.apache.velocity.exception,org.apache.velocity.runtime,
                             org.apache.velocity.runtime.parser,org.apache.velocity.runtime.parser.node";
-                            version=${velocity.prev.version},
+                            version=${exp.pkg.version.velocity},
                             org.apache.velocity.runtime.log;uses:="org.apache.log.format,org.apache.velocity.runtime,
                             org.apache.velocity.runtime.directive,org.apache.velocity.runtime.parser.node,
-                            org.apache.velocity.util.introspection";version=${velocity.prev.version},
+                            org.apache.velocity.util.introspection";version=${exp.pkg.version.velocity},
                             org.apache.velocity.runtime.parser;uses:="org.apache.velocity.exception,
                             org.apache.velocity.runtime,org.apache.velocity.runtime.directive,
-                            org.apache.velocity.runtime.parser.node";version=${velocity.prev.version},
+                            org.apache.velocity.runtime.parser.node";version=${exp.pkg.version.velocity},
                             org.apache.velocity.runtime.parser.node;uses:="org.apache.commons.lang.text,
                             org.apache.velocity.context,org.apache.velocity.exception,org.apache.velocity.runtime,
                             org.apache.velocity.runtime.log,org.apache.velocity.runtime.parser,
-                            org.apache.velocity.util.introspection";version=${velocity.prev.version},
+                            org.apache.velocity.util.introspection";version=${exp.pkg.version.velocity},
                             org.apache.velocity.runtime.resource;uses:="org.apache.velocity.exception,
                             org.apache.velocity.runtime,org.apache.velocity.runtime.resource.loader";
-                            version=${velocity.prev.version},
+                            version=${exp.pkg.version.velocity},
                             org.apache.velocity.runtime.resource.loader;uses:="javax.sql,org.apache.commons.collections,
                             org.apache.velocity.exception,org.apache.velocity.runtime,
                             org.apache.velocity.runtime.resource,org.apache.velocity.runtime.resource.util";
-                            version=${velocity.prev.version},
-                            org.apache.velocity.runtime.resource.util; version=${velocity.prev.version},
+                            version=${exp.pkg.version.velocity},
+                            org.apache.velocity.runtime.resource.util; version=${exp.pkg.version.velocity},
                             org.apache.velocity.runtime.visitor;uses:="org.apache.velocity.context,
-                            org.apache.velocity.runtime.parser.node";version=${velocity.prev.version},
+                            org.apache.velocity.runtime.parser.node";version=${exp.pkg.version.velocity},
                             org.apache.velocity.servlet;uses:="javax.servlet,javax.servlet.http,org.apache.velocity,
-                            org.apache.velocity.context,org.apache.velocity.exception";version=${velocity.prev.version},
+                            org.apache.velocity.context,org.apache.velocity.exception";version=${exp.pkg.version.velocity},
                             org.apache.velocity.texen;uses:="org.apache.velocity,org.apache.velocity.app,
-                            org.apache.velocity.context";version=${velocity.prev.version},
+                            org.apache.velocity.context";version=${exp.pkg.version.velocity},
                             org.apache.velocity.texen.ant;uses:="org.apache.commons.collections,org.apache.tools.ant,
-                            org.apache.velocity.context";version=${velocity.prev.version},
-                            org.apache.velocity.texen.defaults; version=${velocity.prev.version},
-                            org.apache.velocity.texen.util; version=${velocity.prev.version},
+                            org.apache.velocity.context";version=${exp.pkg.version.velocity},
+                            org.apache.velocity.texen.defaults; version=${exp.pkg.version.velocity},
+                            org.apache.velocity.texen.util; version=${exp.pkg.version.velocity},
                             org.apache.velocity.util;uses:="org.apache.velocity.context,org.apache.velocity.runtime,
                             org.apache.velocity.runtime.parser.node,org.apache.velocity.util.introspection";
-                            version=${velocity.prev.version},
+                            version=${exp.pkg.version.velocity},
                             org.apache.velocity.util.introspection;uses:="org.apache.velocity.runtime,
                             org.apache.velocity.runtime.log,org.apache.velocity.runtime.parser.node,
-                            org.apache.velocity.util";version=${velocity.prev.version}
+                            org.apache.velocity.util";version=${exp.pkg.version.velocity}
                         </Export-Package>
                         <Private-Package>
                         </Private-Package>
@@ -161,7 +161,7 @@
 
     <properties>
         <velocity.version>2.3</velocity.version>
-        <velocity.prev.version>1.7.0.wso2v1</velocity.prev.version>
+        <exp.pkg.version.velocity>2.3.0.wso2v1</exp.pkg.version.velocity>
         <commons.lang.version>2.6.0.wso2v1</commons.lang.version>
         <commons.lang.version.range>[2.6.0,3.0.0)</commons.lang.version.range>
         <commons.collection.version.range>[3.2.0,4.0.0)</commons.collection.version.range>
