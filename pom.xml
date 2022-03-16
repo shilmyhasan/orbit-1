@@ -150,6 +150,8 @@
         <module>jdbc-pool/9.0.35.wso2v1</module>
         <module>solr/5.2.1.wso2v1</module>
         <module>solr/5.5.5.wso2v2</module>
+        <module>solr/8.11.1.wso2v1</module>
+        <module>lucene/8.11.1.wso2v1</module>
         <module>httpclient/4.3.1.wso2v2</module>
         <module>httpclient/4.3.6.wso2v2</module>
         <module>httpcore/4.3.3-wso2v1</module>
@@ -202,6 +204,8 @@
         <module>h2/2.1.210.wso2v1</module>
         <module>log4j/1.2.17.wso2v1</module>
         <module>velocity/2.3.0.wso2v1</module>
+        <module>spring-framework/5.3.14.wso2v1</module>
+        <module>groovy/2.4.8.wso2v1</module>
     </modules>
 
     <build>
