@@ -136,6 +136,11 @@
             <version>${version.lucene}</version>
         </dependency>
         <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-classification</artifactId>
+            <version>${version.lucene}</version>
+        </dependency>
+        <dependency>
             <groupId>org.locationtech.spatial4j</groupId>
             <artifactId>spatial4j</artifactId>
             <version>${version.locationtech.spatial4j}</version>
