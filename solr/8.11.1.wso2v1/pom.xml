@@ -190,6 +190,7 @@
                             !org.apache.solr.*,
                             !org.eclipse.jetty.*,
                             org.apache.lucene.*; version="${version.lucene}",
+                            org.apache.commons.io.*;version="${version.commons.io}",
                             org.apache.zookeeper.*;version="${version.zookeeper}",
                             org.noggit.*;version="${version.noggit}",
                             com.spatial4j.*;version="${version.spatial4j}",
@@ -228,6 +229,7 @@
         <version.lucene>[8.11.0,9.0.0)</version.lucene>
         <orbit.version.solr>${version.solr}.wso2v1</orbit.version.solr>
         <version.noggit>[0.6,0.7)</version.noggit>
+        <version.commons.io>[2.4.0,3.0.0)</version.commons.io>
         <version.zookeeper>[3.3.4,3.5.0)</version.zookeeper>
         <version.spatial4j>[0.4.1,0.5)</version.spatial4j>
         <version.restlet>[2.3.0,2.4.0)</version.restlet>
