@@ -30,7 +30,7 @@
     </description>
     <url>https://wso2.org</url>
 
-   <distributionManagement>
+    <distributionManagement>
         <repository>
             <id>wso2.releases</id>
             <name>WSO2 internal Repository</name>
@@ -42,26 +42,38 @@
             <name>WSO2 Snapshot Repository</name>
             <url>https://maven.wso2.org/nexus/content/repositories/snapshots/</url>
         </snapshotRepository>
-   </distributionManagement>
+    </distributionManagement>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
-	    <version>${version.spring}</version>
-	    <optional>true</optional>
-	</dependency>
-	<dependency>
+            <version>${version.spring}</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-	    <version>${version.spring}</version>
-	    <optional>true</optional>
-        </dependency> 
+            <version>${version.spring}</version>
+            <optional>true</optional>
+        </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
-	    <version>${version.spring}</version>
-	    <optional>true</optional>
+            <version>${version.spring}</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${version.spring}</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${version.spring}</version>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 
