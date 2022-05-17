@@ -60,7 +60,7 @@
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
                         <Export-Package>
-                            com.nimbusds.*; version="7.9.0",
+                            com.nimbusds.*; version="7.3.0",
                         </Export-Package>
                         <Import-Package>
                             !com.nimbusds.*,
