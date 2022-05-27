@@ -214,6 +214,7 @@
         <module>spring-framework/5.3.19.wso2v1</module>
         <module>spring-framework/5.3.19.wso2v2</module>
         <module>groovy/2.4.8.wso2v1</module>
+        <module>jstl/1.2.1.wso2v3</module>
     </modules>
 
     <build>
