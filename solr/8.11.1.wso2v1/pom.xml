@@ -144,7 +144,7 @@
         <dependency>
             <groupId>org.apache.calcite.avatica</groupId>
             <artifactId>avatica-core</artifactId>
-            <version>1.20.0</version>
+            <version>${calcite.avatica.version}</version>
         </dependency>
         <dependency>
             <groupId>org.wso2.orbit.org.apache.commons</groupId>
@@ -242,5 +242,6 @@
         <version.locationtech.spatial4j>0.8</version.locationtech.spatial4j>
         <commons.collection.version>4.4.wso2v1</commons.collection.version>
         <caffeine.version>2.9.2</caffeine.version>
+        <calcite.avatica.version>1.22.0</calcite.avatica.version>
     </properties>
 </project>
