@@ -64,7 +64,7 @@
                         </Export-Package>
                         <Import-Package>
                             !com.nimbusds.*,
-                            net.minidev.*; version="[2.4.0,3.0.0)",
+                            net.minidev.*; version="[2.3.0,3.0.0)",
                             javax.crypto.*,
                             org.bouncycastle.*; resolution:=optional; version="[1.60.0,2.0.0)",
                             net.jcip.annotations.*; resolution:=optional; version="[1.0.0,2.0.0)",
