@@ -152,6 +152,7 @@
         <module>jdbc-pool/7.0.81.wso2v2</module>
         <module>jdbc-pool/9.0.16.wso2v1</module>
         <module>jdbc-pool/9.0.35.wso2v1</module>
+        <module>jdbc-pool/9.0.56.wso2v1</module>
         <module>solr/5.2.1.wso2v1</module>
         <module>solr/5.5.5.wso2v2</module>
         <module>solr/8.11.1.wso2v1</module>
