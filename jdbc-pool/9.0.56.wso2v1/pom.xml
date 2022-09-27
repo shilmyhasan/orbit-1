@@ -65,7 +65,7 @@
     </build>
 
     <properties>
-        <tomcat.jdbc.version>9.0.56</tomcat.jdbc.version>
+        <tomcat.jdbc.version>9.0.65</tomcat.jdbc.version>
         <maven.bundle.plugin.version>3.3.0</maven.bundle.plugin.version>
     </properties>
 </project>
