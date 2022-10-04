@@ -140,6 +140,12 @@
             <optional>true</optional>
         </dependency>
         <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+            <version>${version.cxf.jaxrs}</version>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
             <groupId>com.sun.xml.fastinfoset</groupId>
             <artifactId>FastInfoset</artifactId>
             <version>1.2.13</version>
@@ -475,6 +481,7 @@
 
     <properties>
         <version.cxf>3.0.5</version.cxf>
+        <version.cxf.jaxrs>2.7.18</version.cxf.jaxrs>
         <exp.pkg.version.cxf>3.0.5.wso2v1</exp.pkg.version.cxf>
     </properties>
 </project>
