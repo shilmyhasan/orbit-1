@@ -138,6 +138,7 @@
         <module>activiti-all/5.19.0.wso2v2</module>
         <module>rabbit-mq/3.4.4.wso2v1</module>
         <module>opensaml/2.6.4.wso2v3</module>
+        <module>opensaml/2.6.4.wso2v6</module>
         <module>opensaml/2.4.1.wso2v1</module>
         <module>opensaml/3.3.1.wso2v2</module>
         <module>opensaml/3.3.1.wso2v1</module>
