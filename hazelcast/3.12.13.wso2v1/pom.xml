@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
- ~ Copyright (c) 2020, WSO2 Inc. (http://wso2.com) All Rights Reserved.
- ~
- ~ Licensed under the Apache License, Version 2.0 (the "License");
- ~ you may not use this file except in compliance with the License.
- ~ You may obtain a copy of the License at
- ~
- ~      http://www.apache.org/licenses/LICENSE-2.0
- ~
- ~ Unless required by applicable law or agreed to in writing, software
- ~ distributed under the License is distributed on an "AS IS" BASIS,
- ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- ~ See the License for the specific language governing permissions and
- ~ limitations under the License.
--->
+   ~ Copyright (c) 2022, WSO2 LLC. (http://www.wso2.com). All Rights Reserved.
+   ~
+   ~ This software is the property of WSO2 Inc. and its suppliers, if any.
+   ~ Dissemination of any information or reproduction of any material contained
+   ~ herein in any form is strictly forbidden, unless permitted by WSO2 expressly.
+   ~ You may not alter or remove any copyright or other notice from copies of this content.
+   -->
 
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -24,7 +17,7 @@
     <artifactId>hazelcast</artifactId>
     <packaging>bundle</packaging>
     <name>hazelcast.wso2</name>
-    <version>3.5.4.wso2v2</version>
+    <version>3.12.13.wso2v1</version>
     <description>
         This bundle will export packages from hazelcast
     </description>
@@ -53,7 +46,7 @@
                             com.hazelcast.*;version="${project.version}"
                         </Export-Package>
                         <Import-Package>
-            		    !sun.misc,
+                            !sun.misc,
                             !junit.framework,
                             !org.junit,
                             !org.mockito,
@@ -75,8 +68,8 @@
     </build>
 
     <properties>
-        <version.hazelcast>3.12.2</version.hazelcast>
-    </properties>    
+        <version.hazelcast>3.12.13</version.hazelcast>
+    </properties>
 
     <distributionManagement>
         <repository>
