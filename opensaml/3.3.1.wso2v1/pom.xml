@@ -1144,7 +1144,7 @@
         <junit.textui.version>[0.0.0,1.0.0)</junit.textui.version>
         <nu.xom.version>[0.0.0,1.0.0)</nu.xom.version>
         <org.owasp.validator.html.version>[0.0.0,1.0.0)</org.owasp.validator.html.version>
-        <cryptacular.version>1.1.4</cryptacular.version>
+        <cryptacular.version>1.2.5</cryptacular.version>
     </properties>
 
 </project>
