@@ -10,3 +10,8 @@ http\://www.springframework.org/schema/task=org.springframework.scheduling.confi
 http\://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler
 # spring-aop
 http\://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler
+
+#spring-camel
+http\://camel.apache.org/schema/spring=org.apache.camel.spring.handler.CamelNamespaceHandler
+http\://camel.apache.org/schema/spring/v2.15=org.apache.camel.spring.handler.CamelNamespaceHandler
+http\://camel.apache.org/schema/osgi=org.apache.camel.osgi.CamelNamespaceHandler
