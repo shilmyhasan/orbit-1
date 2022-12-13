@@ -101,7 +101,7 @@
     </build>
 
     <properties>
-        <version.spring>5.3.23</version.spring>
+        <version.spring>5.3.24</version.spring>
         <exp.pkg.version.spring>3.2.9.wso2v1</exp.pkg.version.spring>
         <javax.xml.stream.version.range>[0.0.0, 1.0.0)</javax.xml.stream.version.range>
         <javax.xml.soap.version.range>[0.0.0, 2.0.0)</javax.xml.soap.version.range>
