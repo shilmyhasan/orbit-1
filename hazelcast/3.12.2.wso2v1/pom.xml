@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   ~ Copyright (c) 2023, WSO2 LLC. (http://www.wso2.com). All Rights Reserved.
+   ~
+   ~ This software is the property of WSO2 Inc. and its suppliers, if any.
+   ~ Dissemination of any information or reproduction of any material contained
+   ~ herein in any form is strictly forbidden, unless permitted by WSO2 expressly.
+   ~ You may not alter or remove any copyright or other notice from copies of this content.
+   -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.wso2.orbit.com.hazelcast</groupId>
+    <artifactId>hazelcast</artifactId>
+    <packaging>bundle</packaging>
+    <name>hazelcast.wso2</name>
+    <version>3.12.2.wso2v1</version>
+    <description>
+        This bundle will export packages from hazelcast
+    </description>
+    <url>http://wso2.org</url>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.hazelcast</groupId>
+            <artifactId>hazelcast-all</artifactId>
+            <version>${version.hazelcast}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>4.1.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+                        <Bundle-Name>${project.artifactId}</Bundle-Name>
+                        <Export-Package>
+                            com.hazelcast.*;version="${version.hazelcast.exp.pkg}"
+                        </Export-Package>
+                        <Import-Package>
+                            !sun.misc,
+                            !junit.framework,
+                            !org.junit,
+                            !org.mockito,
+                            org.apache.log4j.*;resolution:=optional,
+                            *;resolution:=optional
+                        </Import-Package>
+                        <Private-Package>
+                        </Private-Package>
+                        <Include-Resource>
+                            @hazelcast-all-${version.hazelcast}.jar!/META-INF/*,
+                            @hazelcast-all-${version.hazelcast}.jar!/hazelcast-runtime.properties,
+                            @hazelcast-all-${version.hazelcast}.jar!/hazelcast-config-*
+                        </Include-Resource>
+                        <DynamicImport-Package>*</DynamicImport-Package>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <properties>
+        <version.hazelcast>3.12.13</version.hazelcast>
+        <version.hazelcast.exp.pkg>3.12.13</version.hazelcast.exp.pkg>
+    </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>wso2.releases</id>
+            <name>WSO2 internal Repository</name>
+            <url>https://maven.wso2.org/nexus/content/repositories/releases/</url>
+        </repository>
+
+        <snapshotRepository>
+            <id>wso2.snapshots</id>
+            <name>Apache Snapshot Repository</name>
+            <url>https://maven.wso2.org/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+</project>
