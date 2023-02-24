@@ -67,8 +67,7 @@
         <dependency>
             <groupId>io.swagger</groupId>
             <artifactId>swagger-models</artifactId>
-            <version>1.5.24</version>
-            <optional>true</optional>
+            <version>1.6.1</version>
         </dependency>
     </dependencies>
 
@@ -169,7 +168,7 @@
 
     <properties>
         <export.pkg.version.swagger-codegen>2.4.30.wso2v2</export.pkg.version.swagger-codegen>
-        <import.io.swagger.version.range>[1.5.8,1.6)</import.io.swagger.version.range>
+        <import.io.swagger.version.range>[1.5.8,1.6.2)</import.io.swagger.version.range>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 </project>
