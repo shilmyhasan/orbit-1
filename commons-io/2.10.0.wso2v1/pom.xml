@@ -61,7 +61,7 @@
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
-            <version>2.10.0</version>
+            <version>${version.patched.commons-io}</version>
             <optional>true</optional>
         </dependency>
     </dependencies>
@@ -94,6 +94,7 @@
 
     <properties>
         <version.commons-io>2.10.0</version.commons-io>
+        <version.patched.commons-io>2.11.0</version.patched.commons-io>
     </properties>
 
 </project>
