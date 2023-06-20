@@ -256,7 +256,7 @@
         <slf4j.api.version>1.7.12</slf4j.api.version>
         <commons-io-version>2.4</commons-io-version>
         <jackson.version.range>[2.7.0,3.0.0)</jackson.version.range>
-        <google.version.range>[27.0.0,32.0.0)</google.version.range>
+        <google.version.range>[27.0.0,28.0.0)</google.version.range>
         <slf4j.version.range>[1.7.0,1.8.0)</slf4j.version.range>
         <import.openapitools.parser.version.range>[2.0, 3.0)</import.openapitools.parser.version.range>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
