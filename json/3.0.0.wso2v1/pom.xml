@@ -98,7 +98,7 @@
     </build>
 
     <properties>
-        <json.version>20140107</json.version>
+        <json.version>20230227</json.version>
         <export.pkg.version.json>3.0.0.wso2v1</export.pkg.version.json>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
