@@ -168,6 +168,7 @@
         <module>solr/8.11.1.wso2v1</module>
         <module>solr/8.11.1.wso2v1_1</module>
         <module>solr/8.11.1.wso2v1_2</module>
+        <module>solr/8.11.1.wso2v6_1</module>
         <module>lucene/8.11.1.wso2v1</module>
         <module>httpclient/4.3.1.wso2v2</module>
         <module>httpclient/4.3.6.wso2v2</module>
