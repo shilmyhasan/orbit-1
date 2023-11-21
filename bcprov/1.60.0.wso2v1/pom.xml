@@ -47,7 +47,7 @@
     <dependencies>
         <dependency>
             <groupId>org.bouncycastle</groupId>
-            <artifactId>bcprov-jdk15on</artifactId>
+            <artifactId>bcprov-jdk18on</artifactId>
             <version>${version.bcprov}</version>
             <!-- By setting optional false, dependent projects of this orbit bundle will be able to see bcprov-jdk15on library as a transitive dependency.
              This is required because we are embedding bcprov-jdk15on library inside this orbit bundle without extracting the content,
@@ -74,7 +74,7 @@
                         <Export-Package>
                             org.bouncycastle.*;version="${exp.pkg.version.bcprov}"
                         </Export-Package>
-                        <Embed-Dependency>bcprov-jdk15on;scope=compile|runtime;inline=false</Embed-Dependency>
+                        <Embed-Dependency>bcprov-jdk18on;scope=compile|runtime;inline=false</Embed-Dependency>
                         <DynamicImport-Package>*</DynamicImport-Package>
                     </instructions>
                 </configuration>
@@ -83,8 +83,8 @@
     </build>
 
     <properties>
-        <exp.pkg.version.bcprov>1.60.0</exp.pkg.version.bcprov>
-        <version.bcprov>1.70</version.bcprov>
+        <exp.pkg.version.bcprov>1.74.0</exp.pkg.version.bcprov>
+        <version.bcprov>1.74</version.bcprov>
     </properties>
 
 </project>
