@@ -1111,7 +1111,6 @@
 
         <joda-time.orbit.version>2.9.4.wso2v1</joda-time.orbit.version>
         <joda-time.orbit.version.range>[2.9.4,3.0.0)</joda-time.orbit.version.range>
-
         <esapi.version>2.5.3.1</esapi.version>
 
         <!--OpenSAML3 Orbit Version-->
