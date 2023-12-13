@@ -63,7 +63,7 @@
         </plugins>
     </build>
     <properties>
-        <version.jstl>1.2.1</version.jstl>
+        <version.jstl>1.2.2</version.jstl>
         <version.jstl.glassfish>1.2.5</version.jstl.glassfish>
         <orbit.version.jstl>1.2.1.wso2v3</orbit.version.jstl>
         <exp.pkg.version.javax.servlet.jsp.jstl>1.2.1</exp.pkg.version.javax.servlet.jsp.jstl>
