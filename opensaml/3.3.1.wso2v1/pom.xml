@@ -1107,7 +1107,7 @@
         <!--Shibboleth Version-->
         <shibboleth.version>7.3.0</shibboleth.version>
         <!--Apache Commons Codec Version-->
-        <apache.commons.codec.version>1.10</apache.commons.codec.version>
+        <apache.commons.codec.version>1.14</apache.commons.codec.version>
 
         <joda-time.orbit.version>2.9.4.wso2v1</joda-time.orbit.version>
         <joda-time.orbit.version.range>[2.9.4,3.0.0)</joda-time.orbit.version.range>
